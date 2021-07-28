@@ -5,7 +5,7 @@ register a single study, so if you have multiple experimental designs that you
 wish to preregister, please complete separate preregistrations for each of
 them._
 
-## Study Type\*
+## Study Type*
 
 |      |                                                                                                         |
 | ---- | ------------------------------------------------------------------------------------------------------- |
@@ -13,7 +13,7 @@ them._
 | \_\_ | Observational study (data collected from subjects without having been randomly assigned to a treatment) |
 | \_\_ | Other                                                                                                   |
 
-## Study Design\*
+## Study Design*
 
 Describe your **study design**. Is it a between-subjects (unpaired),
 within-subjects (paired), or mixed design? If applicable, specify
@@ -39,7 +39,7 @@ of the exposure
 | \_\_or NA | cross-sectional study (e.g. differences in fMRI activity predict between-person differences in a trait) |
 | \_\_or NA | cohort study/longitudinal study (e.g. fMRI or change in fMRI predict within-person change in a trait)   |
 
-## Experimental design\*
+## Experimental design*
 
 Describe the experimental design of the task(s) performed in the scanner. You
 can fill in the table for each task or write a paragraph below as you would for
@@ -52,7 +52,7 @@ link to it here.
 | --------- | --------------------------------------------------------------------------------------------------------------------- |
 | \_\_      | Design type (task, rest; event-related, block, mixed design, naturalistic)                                            |
 | \_\_      | Instructions to subjects (what were they asked to do?)                                                                |
-| \_\_      | State whether or not participants practiced the task, and if so, describe the practice.                                |
+| \_\_      | State whether or not participants practiced the task, and if so, describe the practice.                               |
 | \_\_      | Conditions & Stimuli (as detailed as possible, pictures encouraged)                                                   |
 | \_\_      | Number of runs, blocks, trials or experimental units per session and/or subject                                       |
 | \_\_      | Timing and Duration (length of each trial and interval between trials, jitter)                                        |
@@ -76,7 +76,7 @@ description of the study design. There may be some overlap between this section
 and the following section. That is OK, as long as sufficient detail is given in
 one of the areas to provide all of the requested information._
 
-## Blinding\*
+## Blinding*
 
 Blinding describes who is aware of the experimental manipulations within a
 study.
@@ -89,7 +89,7 @@ study.
 | \_\_or NA | Personnel who analyze the data collected from the study are not aware of the treatment applied to any given group.                                                            |
 | \_\_or NA | Additional blinding in this study:                                                                                                                                            |
 
-## Randomization\*
+## Randomization*
 
 Is there any form of randomization of your participants and/or staff? If so,
 detail the type of randomization (e.g., simple randomization, block

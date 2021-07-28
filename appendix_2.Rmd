@@ -1,132 +1,81 @@
-## [Appendix 2: fMRI data acquisition checklists]
+## Appendix 2: fMRI data acquisition checklists
 
-[*If your study includes multiple different scanners, or if multiple different
+_If your study includes multiple different scanners, or if multiple different
 sequences of the same category are used (e.g. multiple functional MRI
-sequences), please fill out a separate table for each scanner and sequence. *]
+sequences), please fill out a separate table for each scanner and sequence. _
 
-**[Participant preparation]**
+### Participant preparation
 
-[Test scanning (Report type of (mock) scanner and protocol; i.e. duration, types
-of simulated scans, experiments).] [__or NA]
+|           |                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------- |
+| \_\_or NA | Test scanning (Report type of (mock) scanner and protocol; i.e. duration, types of simulated scans, experiments). |
+| \_\_or NA | Special equipment to reduce/monitor head motion (head cases, prospective motion tracking ...)                     |
+| \_\_or NA | Specific accommodations (e.g., pediatric, parent present, asleep)                                                 |
+| \_\_or NA | Experimental personnel (number of planned personnel to interact with participants)                                |
 
----
+### MRI system
 
-[Special equipment to reduce/monitor head motion (head cases, prospective motion
-tracking ...)] [__or NA] [Specific accommodations (e.g., pediatric, parent
-present, asleep)] [__or NA] [Experimental personnel (number of planned personnel
-to interact with participants)] [__or NA]
+|      |                           |
+| ---- | ------------------------- |
+| \_\_ | Manufacturer              |
+| \_\_ | Model name                |
+| \_\_ | Software version          |
+| \_\_ | Field strength (in Tesla) |
+| \_\_ | Transmission coil         |
+| \_\_ | Receiving head coil       |
 
-**_[MRI system]_**
+### MRI acquisition
 
-[Manufacturer] [__]
-
----
-
-[Model name] [__] [Software version] [__] [Field strength (in Tesla)] [__]
-[Transmission coil] [__] [Receiving head coil] [__]
-
-[***MRI acquisition***]
-
-_[If this is a study using multiple different scanners, or if multiple different
+_If this is a study using multiple different scanners, or if multiple different
 sequences of the same category are used (e.g. multiple functional MRI
-sequences), please fill out a separate table for each scanner and sequence.]_
+sequences), please fill out a separate table for each scanner and sequence._
 
-+-----------------------+-----------------------+-----------------------+ |
-**[For all | [Pulse sequence | [__] | | acquisitions:]{dir="l | (gradient/spin
-echo | tr"}** | etc.)]
-+=======================+=======================+=======================+
-[Readout (EPI, | [__] | spiral, 3D, partial Fourier, etc.)]
-+-----------------------+-----------------------+-----------------------+ [Echo
-time | [__] | (TE)]
-+-----------------------+-----------------------+-----------------------+
-[Repetition time | [__] | (TR)]
+#### For all acquisitions
 
-- [For multi­shot
+|            |                                                                                                                                                                                                                                                                                                          |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \_\_       | Pulse sequence (gradient/spin echo etc.)                                                                                                                                                                                                                                                                 |
+| \_\_       | Readout (EPI, spiral, 3D, partial Fourier, etc.)                                                                                                                                                                                                                                                         |
+| \_\_       | Echo time (TE)                                                                                                                                                                                                                                                                                           |
+| \_\_       | Repetition time (TR)- For multi­shot acquisitions, additionally the time per volume.                                                                                                                                                                                                                     |
+| \_\_       | Flip angle (FA)                                                                                                                                                                                                                                                                                          |
+| \_\_       | Acquisition time (duration of acquisition)                                                                                                                                                                                                                                                               |
+| \_\_       | Field of view (FOV)                                                                                                                                                                                                                                                                                      |
+| \_\_       | FOV position?- Full or partial brain coverage? - Guided by anatomical landmarks? - Guided by built-in scanner functions (e.g. AUTO ALIGN)?                                                                                                                                                               |
+| \_\_       | Voxel size (in-plane)                                                                                                                                                                                                                                                                                    |
+| \_\_       | Slice thickness                                                                                                                                                                                                                                                                                          |
+| \_\_       | Slice gap                                                                                                                                                                                                                                                                                                |
+| \_\_       | Slice selection direction (axial, sagittal, coronal, oblique)                                                                                                                                                                                                                                            |
+| \_\_       | Slice angulation                                                                                                                                                                                                                                                                                         |
+| \_\_       | Slice acquisition order (ascending, descending, interleaved)                                                                                                                                                                                                                                             |
+| \_\_ or NA | Parallel imaging method (GRAPPA, PAT ...)                                                                                                                                                                                                                                                                |
+| \_\_ or NA | Scanner-side preprocessing (e.g., Including: Fat saturation, Reconstruction matrix size differing from acquisition matrix size; Prospective-motion correction (including details of any optical tracking, and how motion parameters are used); Signal inhomogeneity correction; Distortion-correction .) |
+| \_\_       | Phase encoding direction                                                                                                                                                                                                                                                                                 |
 
-  > acquisitions, additionally the time per volume.]{dir="l tr"}
-  > +-----------------------+-----------------------+-----------------------+
-  > [Flip angle | [__] | (FA)]
-  > +-----------------------+-----------------------+-----------------------+
-  > [Acquisition time | [__] | (duration of acquisition)]{dir="lt r"}
-  > +-----------------------+-----------------------+-----------------------+
-  > [Field of view | [__] | (FOV)]
-  > +-----------------------+-----------------------+-----------------------+
-  > [FOV | [__] | position?]
+#### For functional MRI or dynamic (4D) MRI e.g. functional, perfusion MRI
 
-- [Full or partial
+|            |                                                                   |
+| ---------- | ----------------------------------------------------------------- |
+| \_\_       | Number of volumes                                                 |
+| \_\_       | Single or multi-echo?                                             |
+| \_\_ or NA | Simultaneous multislice acquisition & parameters (e.g. multiband) |
+| \_\_ or NA | T1 stabilization (discarded "dummy" scans _by scanner_            |
+| \_\_       | Sparse sampling delay (delay in TR) if used.                      |
 
-  > brain coverage?]{dir= "ltr"}
+#### Other sequences
 
-- [Guided by
-
-  > anatomical landmarks?]{dir ="ltr"}
-
-- [Guided by
-  > built-in scanner functions (e.g. AUTO ALIGN)?]{dir="l tr"}
-  > +-----------------------+-----------------------+-----------------------+
-  > [Voxel size | [__] | (in-plane)]{dir="ltr" }
-  > +-----------------------+-----------------------+-----------------------+
-  > [Slice | [__] | thickness]
-  > +-----------------------+-----------------------+-----------------------+
-  > [Slice | [__] | gap]
-  > +-----------------------+-----------------------+-----------------------+
-  > [Slice selection | [__] | direction (axial, sagittal, coronal, oblique)]
-  > +-----------------------+-----------------------+-----------------------+
-  > [Slice | [__] | angulation]{dir="ltr" }
-  > +-----------------------+-----------------------+-----------------------+
-  > [Slice acquisition | [__] | order (ascending, descending,
-  > interleaved)]{dir="lt r"}
-  > +-----------------------+-----------------------+-----------------------+
-  > [Parallel imaging | [_ or NA] | method (GRAPPA, PAT ...)]
-  > +-----------------------+-----------------------+-----------------------+
-  > [Scanner-side | [_ or NA] | preprocessing (e.g., Including: Fat saturation,
-  > Reconstruction matrix size differing from acquisition matrix size;
-  > Prospective-motion correction (including details of any optical tracking,
-  > and how motion parameters are used); Signal inhomogeneity correction;
-  > Distortion-correction .)]
-  > +-----------------------+-----------------------+-----------------------+
-  > [Phase encoding | [__] | direction]
-  > +-----------------------+-----------------------+-----------------------+ |
-  > **[Functional MRI | [Number of | [__] | | /]** | volumes]
-
-| **[or \"dynamic (4D) | | MRI e.g. functional, | | perfusion | | MRI\"]** |
-+-----------------------+-----------------------+-----------------------+
-[Single or | [__] | multi-echo?]{dir="ltr "}
-+-----------------------+-----------------------+-----------------------+
-[Simultaneous | [_ or NA] | multislice acquisition & parameters (e.g.
-multiband)]{dir="ltr" }
-+-----------------------+-----------------------+-----------------------+ [T1
-stabilization | [_ or NA] | (discarded "dummy" scans _by scanner_)]
-+-----------------------+-----------------------+-----------------------+
-
-> [Sparse sampling > delay (delay in TR) > if > used.]
-> +-----------------------+-----------------------+-----------------------+ |
-> **[T1-weighted | [Fat | [_ or NA] | | imaging]** | suppression]{dir="ltr "}
-> +-----------------------+-----------------------+-----------------------+ |
-> **[Other anatomical [_ or NA] | | imaging | | (T2)]** |
-> +-----------------------+-----------------------+-----------------------+ |
-> **[Inversion recovery | [Inversion time | [_ or NA] | | sequences] | (TI)] |
-> ** | +-----------------------+-----------------------+-----------------------+
-> | > **[Additional | [B0 field | [_ or NA] | | > imaging] | maps] | ** | | >
-> | - [echo difference | > **[for | > between | > distortion]{dir="lt | >
-> acquisitions]{d | r"}** | ir="ltr"} | > | | > **[correction]{dir= | | "ltr"}**
-> |
-
-+-----------------------+-----------------------+-----------------------+ [ap-pa
-acquisitions | [_ or NA] | (reverse phase)]
-
-- [state if
-  > parameters differ from functional acquisition]{di r="ltr"}
-  > +-----------------------+-----------------------+-----------------------+ |
-  > [**Physiological | [Description | [_ or NA] | | measures**]{dir="ltr" |
-  > (acquisition method, | } | hardware) and brief purpose of any physiological
-  > data that will be collected from the participants before/during/after fMRI
-  > (e.g. eye-tracking, pulse, electrocardiography, plethysmography (pulse
-  > oximetry), respiration, blood pressure, blood samples, skin conductance
-  > (SCR), electromyography, etc.).]
-
-+-----------------------+-----------------------+-----------------------+ |
-**[Other imaging | [Give a description | modalities]{dir="ltr" | and brief
-purpose | }** | statement of any other imaging modalities that will be included
-in your study (e.g., EEG, Neuromodulation (TMS, tDCS, ...)).]
-+-----------------------+-----------------------+-----------------------+
+|                                                  |                                                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **T1-weighted imaging**                          |                                                                                                                                                                                                                                                                                                                                             |
+| \_\_ or NA                                       | Fat suppression                                                                                                                                                                                                                                                                                                                             |
+| **Other anatomical (T2)**                        |                                                                                                                                                                                                                                                                                                                                             |
+| \_\_ or NA                                       |                                                                                                                                                                                                                                                                                                                                             |
+| **Inversion recovery sequences**                 |                                                                                                                                                                                                                                                                                                                                             |
+| \_\_ or NA                                       | Inversion time (TI)                                                                                                                                                                                                                                                                                                                         |
+| **Additional imaging for distortion correction** |                                                                                                                                                                                                                                                                                                                                             |
+| \_\_ or NA                                       | B0 field maps: echo difference between acquisitions                                                                                                                                                                                                                                                                                         |
+| \_\_ or NA                                       | ap-pa acquisitions (reverse phase): state if parameters differ from functional acquisition                                                                                                                                                                                                                                                  |
+| **Physiological measures**                       |                                                                                                                                                                                                                                                                                                                                             |
+| \_\_ or NA                                       | Description (acquisition method, hardware) and brief purpose of any physiological data that will be collected from the participants before/during/after fMRI (e.g. eye-tracking, pulse, electrocardiography, plethysmography (pulse oximetry), respiration, blood pressure, blood samples, skin conductance (SCR), electromyography, etc.). |
+| **Other imaging modalities**                     |                                                                                                                                                                                                                                                                                                                                             |
+|                                                  | Give a description and brief purpose statement of any other imaging modalities that will be included in your study (e.g., EEG, Neuromodulation (TMS, tDCS, …)).                                                                                                                                                                             |

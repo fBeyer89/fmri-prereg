@@ -28,6 +28,19 @@ output:
    
 -->
 
+# Usage Notes to the template
+
+_The goal of this template is to provide sufficient information in
+preregistration of fMRI studies to increase reproducibility._
+
+_A \* indicates you should fill out this section, all other sections are
+optional._
+
+*You can use the tables to fill in your design specifications, or use them as
+checklists of information you include in the text for in attached files (e.g.,
+json file of scan parameters). If a certain table/section does not apply, just
+state "NA." Tip: Using it as a checklist will allow you to write these sections
+as they will appear in your future paper.*
 
 
 ```{r child='01_study_information.Rmd'}
@@ -52,16 +65,4 @@ output:
 ```
 
 
-# [Usage Notes to the template]
 
-_The goal of this template is to provide sufficient information in
-preregistration of fMRI studies to increase reproducibility._
-
-_A \* indicates you should fill out this section, all other sections are
-optional._
-
-*You can use the tables to fill in your design specifications, or use them as
-checklists of information you include in the text for in attached files (e.g.,
-json file of scan parameters). If a certain table/section does not apply, just
-state "NA." Tip: Using it as a checklist will allow you to write these sections
-as they will appear in your future paper.*

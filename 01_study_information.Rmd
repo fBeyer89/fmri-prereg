@@ -1,11 +1,11 @@
 # Study Information
 
-## Working title
+## Working title*
 
 A specific and informative description of your planned study. It doesn't have to
 be the same title that you use for later publication.
 
-## Authors
+## Authors*
 
 This can but does not need to include authorship order and/or contributions
 planned for later publication.
@@ -17,7 +17,7 @@ broad research question to help to ensure your hypotheses are properly informed.
 The recommended length is that of an abstract. One may also consider to write
 this section as a concise introduction for the planned publication.
 
-## Hypotheses
+## Hypotheses*
 
 List each hypothesis you want to test as part of this study. Each hypothesis
 should be specific, concise and testable. The table below can be used as a

@@ -6,7 +6,7 @@ the data described in this section should be the actual data used for analysis,
 so if you are using a subset of a larger dataset, please describe the subset
 that will actually be used in your study._
 
-## Details of Larger Project
+## Details of Larger Project*
 
 Is your preregistration part of a larger project?
 
@@ -18,7 +18,7 @@ Is your preregistration part of a larger project?
   > may also include a figure detailing the protocol of the project. Note, this
   > is meant to provide context for the larger scope of the project.
 
-## Existing data
+## Existing data*
 
 Preregistration is designed to emphasize the distinction between confirmatory
 tests, specified prior to seeing the data, and exploratory analyses conducted
@@ -46,7 +46,7 @@ about the sample you investigate (e.g., links to prior papers, osf project page,
 prior posters or talks, or descriptions). The purpose of this question is to
 assure that the line between confirmatory and exploratory analysis is clear.
 
-## Data collection
+## Data collection*
 
 Is this preregistration done before data collection?
 
@@ -116,6 +116,7 @@ Please specify all additional measures you plan to investigate, for example:
   > (TMS, tDCS, ...)).
 
 - **Physiological recordings:**
+
   > Give a description and brief purpose statement of any physiological data
   > that will be collected from the participants before/during/after fMRI (e.g.
   > eye-tracking, pulse, electrocardiography, plethysmography (pulse oximetry),
@@ -125,20 +126,20 @@ Please specify all additional measures you plan to investigate, for example:
 _Note that parts of this section may be covered in the Design Plan section
 instead._
 
-## Sample Size
+## Sample Size*
 
 State your target sample size and, if applicable, your stopping rule. Justify
 your choices.
 
 Justification of sample size or stopping rule:
 
-|           |                                                                                                                                                                                                                                                                                                                               |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_\_or NA | Power Analysis for fMRI or behavioral analysis. Please provide all details on your calculation. (strongly recommended, no standard procedures for fMRI power analysis but see https://brainpower.readthedocs.io/en/latest/index.html{.underline}(https://brainpower.readthedocs.io/en/latest/index.html) for available tools) |
-| \_\_or NA | Time constraints (e.g., will recruit for one year or until X date)                                                                                                                                                                                                                                                            |
-| \_\_or NA | Money constraints (e.g., monetary support will support up to Xsubjects)                                                                                                                                                                                                                                                       |
-| \_\_or NA | Personnel constraints (e.g., will recruit for time period in which personnel support is available)                                                                                                                                                                                                                            |
-| \_\_      | ** Other:**                                                                                                                                                                                                                                                                                                                   |
+|           |                                                                                                                                                                                                                                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \_\_or NA | Power Analysis for fMRI or behavioral analysis. Please provide all details on your calculation. (strongly recommended, no standard procedures for fMRI power analysis but see [https://brainpower.readthedocs.io/en/latest/index.html](https://brainpower.readthedocs.io/en/latest/index.html) for available tools) |
+| \_\_or NA | Time constraints (e.g., will recruit for one year or until X date)                                                                                                                                                                                                                                                  |
+| \_\_or NA | Money constraints (e.g., monetary support will support up to Xsubjects)                                                                                                                                                                                                                                             |
+| \_\_or NA | Personnel constraints (e.g., will recruit for time period in which personnel support is available)                                                                                                                                                                                                                  |
+| \_\_      | Other:                                                                                                                                                                                                                                                                                                              |
 
 If possible, include contingencies for if your target sample size is not met.
 E.g., how will hypotheses be adopted to better powered question?

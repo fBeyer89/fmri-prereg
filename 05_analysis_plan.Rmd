@@ -6,7 +6,7 @@ corresponding model in this section; specify the usage of covariates in
 sensitivity analyses and the selection of regions of interest). If you plan to
 include additional fMRI analyses techniques, check Appendix 3 for checklists._
 
-## Statistical modeling\*
+## Statistical modeling*
 
 ### Behavioral analysis
 

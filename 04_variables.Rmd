@@ -11,7 +11,7 @@ required to list them, though you are permitted to do so._
 Describe all variables you plan to manipulate and the levels or treatment arms
 of each variable. This is not applicable to an observational study.
 
-## Measured variables
+## Measured variables*
 
 ### Behavioral data
 
