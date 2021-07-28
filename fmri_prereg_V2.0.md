@@ -1,402 +1,280 @@
 ---
-title: '[]{#_gjdgxs .anchor}[The fMRI preregistration template]{dir="ltr"}'
+title: '{#_gjdgxs .anchor}[The fMRI preregistration template]'
 ---
 
-[**[The evolution of the template:]{.underline}**]{dir="ltr"}
 
-+-----------------------------------+-----------------------------------+
-| **[2018]{dir="ltr"}**             | [Adopted the text from the OSF    |
-|                                   | preregistration challenge         |
-| **[(original)]{dir="ltr"}**       | template to include the details   |
-|                                   | important for fMRI psychology     |
-| [Jessica Flannery]{dir="ltr"}     | design. The OSF template was      |
-|                                   | retained in some areas and edited |
-|                                   | in other areas to incorporate     |
-|                                   | both prior published templates    |
-|                                   | and guidelines regarding fMRI     |
-|                                   | (Nichols et al., 2016; Poldrack   |
-|                                   | et al., 2008; van't Veer &        |
-|                                   | Giner-Sorolla, 2016). Find the    |
-|                                   | current version here:             |
-|                                   | [[https://osf.io/6juft/]{.underli |
-|                                   | ne}](https://osf.io/6juft/)]{dir= |
-|                                   | "ltr"}                            |
-+===================================+===================================+
-| **[Nov 2019]{dir="ltr"}**         | [Discussed the structure and      |
-|                                   | rearranged the sections of the    |
-| [MPI-CBS]{dir="ltr"}              | preregistration so that they      |
-|                                   | matched the [[OSF preregistration |
-| [hackathon]{dir="ltr"}            | template]{.underline}](https://do |
-|                                   | cs.google.com/document/d/1DaNmJEt |
-|                                   | By04bq1l5OxS4JAscdZEkUGATURWwnBKL |
-|                                   | Yxk/edit?pli=1)                   |
-|                                   | (Study Information, Design Plan,  |
-|                                   | Sampling Plan, Variables,         |
-|                                   | Analysis Plan, Other). Agreed it  |
-|                                   | would be best to first focus on   |
-|                                   | task/resting state fMRI studies   |
-|                                   | with this template (e.g. exclude  |
-|                                   | sMRI and DWI for the              |
-|                                   | moment).]{dir="ltr"}              |
-+-----------------------------------+-----------------------------------+
-| **[June 2020]{dir="ltr"}**        | [Worked on details of the         |
-|                                   | experimental design (regarding    |
-| [MPI-CBS]{dir="ltr"}              | neuropsychological testing and    |
-|                                   | design/implementation of the      |
-| [hackathon]{dir="ltr"}            | behavioral task). Swapped the     |
-|                                   | order of Design and Sampling Plan |
-|                                   | from the original OSF template.   |
-|                                   | Restructured the Acquisition and  |
-|                                   | Preprocessing section to improve  |
-|                                   | the usability regarding the       |
-|                                   | details of MRI sequences and      |
-|                                   | preprocessing                     |
-|                                   | settings.]{dir="ltr"}             |
-+-----------------------------------+-----------------------------------+
-| **[Aug 2020]{dir="ltr"}**         | [Sandra, Emiliano, Peer, Abdalla, |
-|                                   | Remy, Frauke, Lina, and Eleni     |
-| [MPI-CBS]{dir="ltr"}              | went through the document until   |
-|                                   | analyses section, discussed and   |
-| [hackathon]{dir="ltr"}            | made comments on sections that    |
-|                                   | need further improvement. Decided |
-|                                   | that the template should focus on |
-|                                   | a "basic" design with anatomical  |
-|                                   | sequences + task-based fMRI +     |
-|                                   | additional                        |
-|                                   | behavioral/questionnaires.        |
-|                                   | Encourage the preregistration of  |
-|                                   | other modalities and experiments  |
-|                                   | but don't want to give more       |
-|                                   | detail about these to keep the    |
-|                                   | document as comprehensive as      |
-|                                   | possible. Decided to make the     |
-|                                   | template detailed to nudge people |
-|                                   | into considering certain topics   |
-|                                   | (e.g. power                       |
-|                                   | analysis).]{dir="ltr"}            |
-+-----------------------------------+-----------------------------------+
-| **[Mar 2021]{dir="ltr"}**         | [Lina, Frauke, Hannah, Jessica,   |
-|                                   | Maurizio, Lieneke, Arsene went    |
-| [MPI-CBS]{dir="ltr"}              | through the template and          |
-|                                   | identified open (and new)         |
-| [hackathon]{dir="ltr"}            | discussion points. A major point  |
-|                                   | was to provide a concise or       |
-|                                   | detailed preregistration          |
-|                                   | template. In the current version  |
-|                                   | many parameters and decisions     |
-|                                   | cannot or are usually not altered |
-|                                   | after having acquired the data    |
-|                                   | (e.g. sequence parameters, design |
-|                                   | plan), and are thus usually not   |
-|                                   | subject to researchers' degrees   |
-|                                   | of freedom. Therefore it was      |
-|                                   | decided to make these less        |
-|                                   | prominent in the template, and    |
-|                                   | put more emphasis on hypothesis   |
-|                                   | formulation, preprocessing and    |
-|                                   | analysis plan. To not scare       |
-|                                   | people away, essential/optional   |
-|                                   | tags should be added, and         |
-|                                   | examples provided instead of      |
-|                                   | exhaustive lists of possible      |
-|                                   | parameters. It was also decided   |
-|                                   | to shorten the power analysis     |
-|                                   | part not to make the document too |
-|                                   | educational. Finally, a schedule  |
-|                                   | was agreed on, see                |
-|                                   | below.]{dir="ltr"}                |
-+-----------------------------------+-----------------------------------+
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-[]{dir="ltr"}
-
-**[Discussion points]{dir="ltr"}**
+**[Discussion points]**
 
 -   [detailed vs. concise description of elements, or support
-    > both?]{dir="ltr"}
+    > both?]
 
     -   [template might be too overwhelming if detailed -\> rather break
         > down by using mandatory/optional, maybe have "defaults" of
         > programs in supplements/methods part to make sure they are
-        > reported]{dir="ltr"}
+        > reported]
 
     -   [lots of details about things that you cannot change after you
         > have conducted your experiment (fmri sequence), most people
-        > preregister after they have acquired their task]{dir="ltr"}
+        > preregister after they have acquired their task]
 
     -   [move acquisition parameters and other parts which are important
         > for manuscript but not for preregistration to
-        > appendix]{dir="ltr"}
+        > appendix]
 
 -   [mark recommended and essential labels (e.g., relating to the choice
-    > of going with a detailed vs. concise description)]{dir="ltr"}
+    > of going with a detailed vs. concise description)]
 
 -   [other modalities (to be added after publishing the fMRI specific
-    > template)]{dir="ltr"}
+    > template)]
 
--   [incorporate fmriprep's defaults]{dir="ltr"}
+-   [incorporate fmriprep's defaults]
 
 -   [align structure with structure of a manuscript: decision: keep
     > current order (OSF template) and move into a more concise
-    > version]{dir="ltr"}
+    > version]
 
 -   [use tables as list of check boxes when writing methods
-    > section]{dir="ltr"}
+    > section]
 
 -   [power analysis: unknown effect sizes and practical limitations in
     > fMRI studies rather than a-priori power analysis which are rarely
-    > done. Exploratory vs. confirmatory analyses,]{dir="ltr"}
+    > done. Exploratory vs. confirmatory analyses,]
 
-> []{dir="ltr"}
+> 
 
--   []{dir="ltr"}
+-   
 
-[ ]{dir="ltr"}
+[ ]
 
-> []{dir="ltr"}
+> 
 
- [Table of contents]{dir="ltr"}
+ [Table of contents]
 ==============================
 
 [**[Usage Notes to the template](#usage-notes-to-the-template)
-1**]{dir="ltr"}
+1**]
 
-[**[Study Information](#study-information) 1**]{dir="ltr"}
+[**[Study Information](#study-information) 1**]
 
-> [[Working title\*](#working-title) 1]{dir="ltr"}
+> [[Working title\*](#working-title) 1]
 >
-> [[Authors\*](#authors) 1]{dir="ltr"}
+> [[Authors\*](#authors) 1]
 >
-> [[Description](#description) 1]{dir="ltr"}
+> [[Description](#description) 1]
 >
-> [[Hypotheses\*](#hypotheses) 1]{dir="ltr"}
+> [[Hypotheses\*](#hypotheses) 1]
 
-[**[Design Plan](#design-plan) 2**]{dir="ltr"}
+[**[Design Plan](#design-plan) 2**]
 
-> [[Study Type\*](#study-type) 2]{dir="ltr"}
+> [[Study Type\*](#study-type) 2]
 >
-> [[Study Design\*](#study-design) 2]{dir="ltr"}
+> [[Study Design\*](#study-design) 2]
 >
-> [[Experimental design\*](#experimental-design) 3]{dir="ltr"}
+> [[Experimental design\*](#experimental-design) 3]
 >
-> [[Blinding\*](#blinding) 4]{dir="ltr"}
+> [[Blinding\*](#blinding) 4]
 >
-> [[Randomization\*](#randomization) 4]{dir="ltr"}
+> [[Randomization\*](#randomization) 4]
 
-[**[Sampling Plan](#sampling-plan) 5**]{dir="ltr"}
+[**[Sampling Plan](#sampling-plan) 5**]
 
 > [[Details of Larger Project\*](#details-of-larger-project)
-> 5]{dir="ltr"}
+> 5]
 >
-> [[Existing data\*](#existing-data) 5]{dir="ltr"}
+> [[Existing data\*](#existing-data) 5]
 >
-> [[Data collection\*](#data-collection) 6]{dir="ltr"}
+> [[Data collection\*](#data-collection) 6]
 >
-> [[Sample Size\*](#sample-size) 7]{dir="ltr"}
+> [[Sample Size\*](#sample-size) 7]
 
-[**[Variables](#variables) 8**]{dir="ltr"}
+[**[Variables](#variables) 8**]
 
-> [[Manipulated variables](#manipulated-variables) 8]{dir="ltr"}
+> [[Manipulated variables](#manipulated-variables) 8]
 >
-> [[Measured variables\*](#measured-variables) 8]{dir="ltr"}
+> [[Measured variables\*](#measured-variables) 8]
 
-[**[Analysis Plan](#analysis-plan) 12**]{dir="ltr"}
+[**[Analysis Plan](#analysis-plan) 12**]
 
-> [[Statistical modeling\*](#statistical-modeling) 12]{dir="ltr"}
+> [[Statistical modeling\*](#statistical-modeling) 12]
 >
-> [[Follow-up Analyses](#follow-up-analyses) 16]{dir="ltr"}
+> [[Follow-up Analyses](#follow-up-analyses) 16]
 >
-> [[Exploratory Analyses](#exploratory-analyses) 16]{dir="ltr"}
+> [[Exploratory Analyses](#exploratory-analyses) 16]
 
-[**[Appendices](#appendices) 1**]{dir="ltr"}
+[**[Appendices](#appendices) 1**]
 
 > [[Appendix 1: Examples of fMRI study
 > pre-registrations](#appendix-1-examples-of-fmri-study-pre-registrations)
-> 1]{dir="ltr"}
+> 1]
 >
 > [[Appendix 2: fMRI data acquisition
 > checklists](#appendix-2-fmri-data-acquisition-checklists)
-> 2]{dir="ltr"}
+> 2]
 >
 > [[Appendix 3: Additional fMRI
-> analyses](#appendix-3-additional-fmri-analyses) 5]{dir="ltr"}
+> analyses](#appendix-3-additional-fmri-analyses) 5]
 
-[]{dir="ltr"}
 
-[Usage Notes to the template]{dir="ltr"}
+
+[Usage Notes to the template]
 ========================================
 
 *[The goal of this template is to provide sufficient information in
 preregistration of fMRI studies to increase
-reproducibility.]{dir="ltr"}*
+reproducibility.]*
 
-[]{dir="ltr"}
+
 
 *[A \* indicates you should fill out this section, all other sections
-are optional.]{dir="ltr"}*
+are optional.]*
 
 [*You can use the tables to fill in your design specifications, or use
 them as checklists of information you include in the text for in
 attached files (e.g., json file of scan parameters). If a certain
 table/section does not apply, just state "NA." Tip: Using it as a
 checklist will allow you to write these sections as they will appear in
-your future paper.*]{dir="ltr"}
+your future paper.*]
 
-[Study Information]{dir="ltr"}
+[Study Information]
 ==============================
 
-[Working title\*]{dir="ltr"}
+[Working title\*]
 ----------------------------
 
 [A specific and informative description of your planned study. It
 doesn't have to be the same title that you use for later
-publication.]{dir="ltr"}
+publication.]
 
-[Authors\*]{dir="ltr"}
+[Authors\*]
 ----------------------
 
 [This can but does not need to include authorship order and/or
-contributions planned for later publication.]{dir="ltr"}
+contributions planned for later publication.]
 
-[Description]{dir="ltr"} 
+[Description] 
 -------------------------
 
 [Give a brief introduction with some background, purpose or aims of the
 study, or broad research question to help to ensure your hypotheses are
 properly informed. The recommended length is that of an abstract. One
 may also consider to write this section as a concise introduction for
-the planned publication.]{dir="ltr"}
+the planned publication.]
 
-[Hypotheses\*]{dir="ltr"} 
+[Hypotheses\*] 
 --------------------------
 
 [List each hypothesis you want to test as part of this study. Each
 hypothesis should be specific, concise and testable. The table below can
-be used as a checklist.]{dir="ltr"}
+be used as a checklist.]
 
 [Be as specific as possible about your regions of interest (ROI) and
 definitions of other relevant variables mentioned here. How to define
 your ROIs or operationalize these relevant variables should be detailed
-in the section **Variables** and **Analysis Plan**.]{dir="ltr"}
+in the section **Variables** and **Analysis Plan**.]
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [\_\_]{dir="ltr"}        [Is the hypothesis directional or non-directional?]{dir="ltr"}
+  [__]        [Is the hypothesis directional or non-directional?]
   ------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [\_\_or NA]{dir="ltr"}   [If directional, state the directional relationship between your (manipulated or measured) variables.]{dir="ltr"}
+  [__or NA]   [If directional, state the directional relationship between your (manipulated or measured) variables.]
 
-  [\_\_or NA]{dir="ltr"}   [For interaction effects, describe the expected shape of the interactions.]{dir="ltr"}
+  [__or NA]   [For interaction effects, describe the expected shape of the interactions.]
 
-  [\                       [If you are manipulating a variable, formulate predictions for successful manipulation checks: What variables will you use to check whether your manipulation worked? If not, explain why no manipulation check is included.]{dir="ltr"}
+  [\                       [If you are manipulating a variable, formulate predictions for successful manipulation checks: What variables will you use to check whether your manipulation worked? If not, explain why no manipulation check is included.]
   \                        
-  \_\_or NA]{dir="ltr"}    
+  __or NA]    
 
-  [\_\_or NA]{dir="ltr"}   [A figure or table with expected results, e.g., to describe complex interactions.]{dir="ltr"}
+  [__or NA]   [A figure or table with expected results, e.g., to describe complex interactions.]
 
-  [\                       [If multiple alternative predictions can be made for the same IV-DV combination, describe what outcome would be predicted by which theory.]{dir="ltr"}
-  \_\_or NA]{dir="ltr"}    
+  [\                       [If multiple alternative predictions can be made for the same IV-DV combination, describe what outcome would be predicted by which theory.]
+  __or NA]    
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*[Adapted from van't Veer & Giner-Sorolla, 2016]{dir="ltr"}*
+*[Adapted from van't Veer & Giner-Sorolla, 2016]*
 
-[]{dir="ltr"}
 
-[Design Plan]{dir="ltr"}
+
+[Design Plan]
 ========================
 
 *[Describe the overall design of your study. This research plan is
 designed to register a single study, so if you have multiple
 experimental designs that you wish to preregister, please complete
-separate preregistrations for each of them.]{dir="ltr"}*
+separate preregistrations for each of them.]*
 
-[Study Type\*]{dir="ltr"}
+[Study Type\*]
 -------------------------
 
   ------------------------------------------------------------------------------------------------------------------------------------------
-  [\                  [Experiment (incl. a manipulation or treatment to which participants are randomly assigned)]{dir="ltr"}
-  \_\_]{dir="ltr"}    
+  [\                  [Experiment (incl. a manipulation or treatment to which participants are randomly assigned)]
+  __]    
   ------------------- ----------------------------------------------------------------------------------------------------------------------
-  [\                  [Observational study (data collected from subjects without having been randomly assigned to a treatment)]{dir="ltr"}
-  \_\_]{dir="ltr"}    
+  [\                  [Observational study (data collected from subjects without having been randomly assigned to a treatment)]
+  __]    
 
-  [\_\_]{dir="ltr"}   [Other: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_]{dir="ltr"}
+  [__]   [Other: ____________________]
   ------------------------------------------------------------------------------------------------------------------------------------------
 
-[Study Design\*]{dir="ltr"}
+[Study Design\*]
 ---------------------------
 
 [Describe your **study design**. Is it a between-subjects (unpaired),
 within-subjects (paired), or mixed design? If applicable, specify
 manipulation(s), groups tested, and repeated measurements. For typical
-types of study designs, see Appendix 2.]{dir="ltr"}
+types of study designs, see Appendix 2.]
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**Experiment / Intervention study**: involves a manipulation of exposure on the subject level]{dir="ltr"}    
+  [**Experiment / Intervention study**: involves a manipulation of exposure on the subject level]    
   ------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [\                                                                                                            [Are effects of an intervention tested in one population by allocating participants randomly to the experimental or control group and testing pre and post intervention? (randomized controlled study)]{dir="ltr"}
+  [\                                                                                                            [Are effects of an intervention tested in one population by allocating participants randomly to the experimental or control group and testing pre and post intervention? (randomized controlled study)]
   \                                                                                                             
-  \_\_ or NA]{dir="ltr"}                                                                                        
+  __ or NA]                                                                                        
 
-  [\                                                                                                            [Are participants allocated to only one group or re-allocated to the other group after a wash-out period? (crossover study)]{dir="ltr"}
-  \_\_or NA]{dir="ltr"}                                                                                         
+  [\                                                                                                            [Are participants allocated to only one group or re-allocated to the other group after a wash-out period? (crossover study)]
+  __or NA]                                                                                         
 
-  [\_\_or NA]{dir="ltr"}                                                                                        [Are intervention effects tested in different populations? (e.g., patients vs. controls)]{dir="ltr"}
+  [__or NA]                                                                                        [Are intervention effects tested in different populations? (e.g., patients vs. controls)]
 
-  [**Observational study**: only measures exposures and outcomes, no manipulation of the exposure]{dir="ltr"}   
+  [**Observational study**: only measures exposures and outcomes, no manipulation of the exposure]   
 
-  [\_\_or NA]{dir="ltr"}                                                                                        [case-control study (e.g. patients vs. healthy controls)]{dir="ltr"}
+  [__or NA]                                                                                        [case-control study (e.g. patients vs. healthy controls)]
 
-  [\_\_or NA]{dir="ltr"}                                                                                        [classical fMRI study (e.g. healthy participants performing the same task)]{dir="ltr"}
+  [__or NA]                                                                                        [classical fMRI study (e.g. healthy participants performing the same task)]
 
-  [\                                                                                                            [cross-sectional study (e.g. differences in fMRI activity predict between-person differences in a trait)]{dir="ltr"}
-  \_\_or NA]{dir="ltr"}                                                                                         
+  [\                                                                                                            [cross-sectional study (e.g. differences in fMRI activity predict between-person differences in a trait)]
+  __or NA]                                                                                         
 
-  [\                                                                                                            [cohort study/longitudinal study (e.g. fMRI or change in fMRI predict within-person change in a trait)]{dir="ltr"}
-  \_\_or NA]{dir="ltr"}                                                                                         
+  [\                                                                                                            [cohort study/longitudinal study (e.g. fMRI or change in fMRI predict within-person change in a trait)]
+  __or NA]                                                                                         
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[]{dir="ltr"}
 
-[Experimental design\*]{dir="ltr"}
+
+[Experimental design\*]
 ----------------------------------
 
 [Describe the experimental design of the task(s) performed in the
 scanner. You can fill in the table for each task or write a paragraph
 below as you would for your publication and use the table as a
-checklist. Consider sharing the code and link to it here.]{dir="ltr"}
+checklist. Consider sharing the code and link to it here.]
 
-  **[Design specification]{dir="ltr"}**   []{dir="ltr"}                                                                                                                         
+  **[Design specification]**                                                                                                                            
   --------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------- ---------------
-  [\_\_]{dir="ltr"}                       [Design type (task, rest; event-related, block, mixed design, naturalistic)]{dir="ltr"}                                               []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [Instructions to subjects (what were they asked to do?)]{dir="ltr"}                                                                   []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [State whether or not participants practiced the task, and if so, describe the practice.]{dir="ltr"}                                  []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [Conditions & Stimuli (as detailed as possible, pictures encouraged)]{dir="ltr"}                                                      []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [Number of runs, blocks, trials or experimental units per session and/or subject]{dir="ltr"}                                          []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [Timing and Duration (length of each trial and interval between trials, jitter)]{dir="ltr"}                                           []{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}                  [Was the design optimized for efficiency? If so, how?]{dir="ltr"}                                                                     []{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}                  [Randomization/pseudo-randomized/counterbalancing (why/why not done & how)]{dir="ltr"}                                                []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [Length of experiment (length of full scan and each run)]{dir="ltr"}                                                                  []{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}                  [Run order (of tasks within scanner)]{dir="ltr"}                                                                                      []{dir="ltr"}
-  [\_\_]{dir="ltr"}                       [Presentation software & response collection (software and hardware, name, version, operating system; code if possible)]{dir="ltr"}   []{dir="ltr"}
-  **[Piloting]{dir="ltr"}**               []{dir="ltr"}                                                                                                                         
-  [\_\_or NA]{dir="ltr"}                  [Did you validate your stimuli? (If yes, describe study & results)]{dir="ltr"}                                                        []{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}                  [Did you pilot your study design? (If yes, describe study and results)]{dir="ltr"}                                                    []{dir="ltr"}
+  [__]                       [Design type (task, rest; event-related, block, mixed design, naturalistic)]                                               
+  [__]                       [Instructions to subjects (what were they asked to do?)]                                                                   
+  [__]                       [State whether or not participants practiced the task, and if so, describe the practice.]                                  
+  [__]                       [Conditions & Stimuli (as detailed as possible, pictures encouraged)]                                                      
+  [__]                       [Number of runs, blocks, trials or experimental units per session and/or subject]                                          
+  [__]                       [Timing and Duration (length of each trial and interval between trials, jitter)]                                           
+  [__or NA]                  [Was the design optimized for efficiency? If so, how?]                                                                     
+  [__or NA]                  [Randomization/pseudo-randomized/counterbalancing (why/why not done & how)]                                                
+  [__]                       [Length of experiment (length of full scan and each run)]                                                                  
+  [__or NA]                  [Run order (of tasks within scanner)]                                                                                      
+  [__]                       [Presentation software & response collection (software and hardware, name, version, operating system; code if possible)]   
+  **[Piloting]**                                                                                                                                        
+  [__or NA]                  [Did you validate your stimuli? (If yes, describe study & results)]                                                        
+  [__or NA]                  [Did you pilot your study design? (If yes, describe study and results)]                                                    
 
-[]{dir="ltr"}
+
 
 [*Note: this question has a variety of possible answers. The key is for
 a researcher to be as detailed as is necessary given the specifics of
@@ -404,28 +282,28 @@ their design. Be careful to determine if every parameter has been
 specified in the description of the study design. There may be some
 overlap between this section and the following section. That is OK, as
 long as sufficient detail is given in one of the areas to provide all of
-the requested information.*]{dir="ltr"}
+the requested information.*]
 
-[Blinding\*]{dir="ltr"}
+[Blinding\*]
 -----------------------
 
 [Blinding describes who is aware of the experimental manipulations
-within a study.]{dir="ltr"}
+within a study.]
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [\_\_or NA]{dir="ltr"}   [No blinding is involved in this study.]{dir="ltr"}
+  [__or NA]   [No blinding is involved in this study.]
   ------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [\_\_or NA]{dir="ltr"}   [For studies that involve human subjects, they will not know the treatment group to which they have been assigned.]{dir="ltr"}
+  [__or NA]   [For studies that involve human subjects, they will not know the treatment group to which they have been assigned.]
 
-  [\_\_or NA]{dir="ltr"}   [Personnel who interact directly with the study subjects (either human or non-human subjects) will not be aware of the assigned treatments. (Commonly known as "double blind")]{dir="ltr"}
+  [__or NA]   [Personnel who interact directly with the study subjects (either human or non-human subjects) will not be aware of the assigned treatments. (Commonly known as "double blind")]
 
-  [\                       [Personnel who analyze the data collected from the study are not aware of the treatment applied to any given group.]{dir="ltr"}
-  \_\_or NA]{dir="ltr"}    
+  [\                       [Personnel who analyze the data collected from the study are not aware of the treatment applied to any given group.]
+  __or NA]    
 
-  [\_\_or NA]{dir="ltr"}   [Additional blinding in this study:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_]{dir="ltr"}
+  [__or NA]   [Additional blinding in this study:______________________]
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Randomization\*]{dir="ltr"} 
+[Randomization\*] 
 -----------------------------
 
 [Is there any form of randomization of your participants and/or staff?
@@ -434,9 +312,9 @@ block randomization, stratified randomization, minimization) and the
 mechanism used to implement the random allocation sequence (e.g., a
 certain software). Note that the randomization applied in the
 experimental design of your task can be described in the section **Study
-Design** above.]{dir="ltr"}
+Design** above.]
 
-[Sampling Plan]{dir="ltr"}
+[Sampling Plan]
 ==========================
 
 *[Describe how you plan to collect samples, as well as the number of
@@ -444,23 +322,23 @@ samples you plan to collect and your rationale for this decision. Please
 keep in mind that the data described in this section should be the
 actual data used for analysis, so if you are using a subset of a larger
 dataset, please describe the subset that will actually be used in your
-study.]{dir="ltr"}*
+study.]*
 
-[Details of Larger Project\*]{dir="ltr"}
+[Details of Larger Project\*]
 ----------------------------------------
 
-[Is your preregistration part of a larger project?]{dir="ltr"}
+[Is your preregistration part of a larger project?]
 
--   [No]{dir="ltr"}
+-   [No]
 
 -   [Yes\
     > If yes, provide a brief description of the larger study or, if
     > applicable, link to the OSF project page, a related
     > preregistration, a poster, etc. You may also include a figure
     > detailing the protocol of the project. Note, this is meant to
-    > provide context for the larger scope of the project.]{dir="ltr"}
+    > provide context for the larger scope of the project.]
 
-[Existing data\*]{dir="ltr"}
+[Existing data\*]
 ----------------------------
 
 [Preregistration is designed to emphasize the distinction between
@@ -472,21 +350,21 @@ datasets (e.g. Human Connectome Project, UK biobank, etc.), we also
 refer to the OSF preregistration template for secondary data analysis,
 which was designed specifically for this type of analytical research
 ([[https://osf.io/x4gzt/]{.underline}](https://osf.io/x4gzt/)). Please
-select the description that best describes your situation:]{dir="ltr"}
+select the description that best describes your situation:]
 
--   [Registration prior to creation of data]{dir="ltr"}
+-   [Registration prior to creation of data]
 
--   [Registration prior to accessing the data]{dir="ltr"}
+-   [Registration prior to accessing the data]
 
--   [Registration prior to any human observation of the data]{dir="ltr"}
+-   [Registration prior to any human observation of the data]
 
--   [Registration prior to analysis of the data]{dir="ltr"}
+-   [Registration prior to analysis of the data]
 
--   [Registration following analysis of the data]{dir="ltr"}
+-   [Registration following analysis of the data]
 
-[]{dir="ltr"}
 
-[Explanation of Existing Data]{dir="ltr"}
+
+[Explanation of Existing Data]
 
 [If you indicate that you will be using some data that already exists in
 this study, please describe your prior knowledge of any patterns or
@@ -495,17 +373,17 @@ access to the data has been limited, who has observed the data, and
 if/what is already known about the sample you investigate (e.g., links
 to prior papers, osf project page, prior posters or talks, or
 descriptions). The purpose of this question is to assure that the line
-between confirmatory and exploratory analysis is clear.]{dir="ltr"}
+between confirmatory and exploratory analysis is clear.]
 
-[]{dir="ltr"}
 
-[]{dir="ltr"}
 
-[Data collection\*]{dir="ltr"}
+
+
+[Data collection\*]
 ------------------------------
 
 [Is this preregistration done before data collection?\
-]{dir="ltr"}
+]
 
 -   [No\
     > There is no need to describe the data collection in complete
@@ -516,7 +394,7 @@ between confirmatory and exploratory analysis is clear.]{dir="ltr"}
     > publication. Especially mention details important for your choices
     > in **Variables** and **Analysis Plan** (e.g. temporal/spatial
     > resolution of fMRI which may motivate certain preprocessing or
-    > analysis procedures).]{dir="ltr"}
+    > analysis procedures).]
 
 -   [Yes\
     > Describe all steps of data collection including your sample
@@ -527,51 +405,51 @@ between confirmatory and exploratory analysis is clear.]{dir="ltr"}
     > sensitivity analysis, exploratory analysis) may also be detailed
     > here. For the task-based fMRI measurements you can use the table
     > in **Appendix 2** as a checklist of topics to cover in this
-    > description.]{dir="ltr"}
+    > description.]
 
-> []{dir="ltr"}
+> 
 
 [*Note: There may be some overlap between this and other sections.
 Again, that is OK, as long as sufficient detail is given in one of the
-areas to provide all of the requested information.*]{dir="ltr"}
+areas to provide all of the requested information.*]
 
-  [Sample description]{dir="ltr"}   
+  [Sample description]   
   --------------------------------- ---------------------------------------------------------------------------------
-  [\_\_]{dir="ltr"}                 [Population]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Recruitment efforts]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Inclusion criteria]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Exclusion criteria]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Reimbursement for participation]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Information on ethics approval and informed consent]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Number of participants tested and analyzed]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Age]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Sex / Gender]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Handedness]{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}            [Clinical criteria]{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}            [Matching strategy]{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}            [Other relevant participant or group characteristics for your study]{dir="ltr"}
-  [\_\_]{dir="ltr"}                 [Study timeline including all measures]{dir="ltr"}
+  [__]                 [Population]
+  [__]                 [Recruitment efforts]
+  [__]                 [Inclusion criteria]
+  [__]                 [Exclusion criteria]
+  [__]                 [Reimbursement for participation]
+  [__]                 [Information on ethics approval and informed consent]
+  [__]                 [Number of participants tested and analyzed]
+  [__]                 [Age]
+  [__]                 [Sex / Gender]
+  [__]                 [Handedness]
+  [__or NA]            [Clinical criteria]
+  [__or NA]            [Matching strategy]
+  [__or NA]            [Other relevant participant or group characteristics for your study]
+  [__]                 [Study timeline including all measures]
 
-[]{dir="ltr"}
 
-[Other Measures]{dir="ltr"}
+
+[Other Measures]
 
 [Please specify all additional measures you plan to investigate, for
-example:]{dir="ltr"}
+example:]
 
 -   [**Experimental tasks outside the scanner:** For each additional
     > behavioral task, give a short description and specify the design
     > and task. You may use the table for the design of scanner tasks in
-    > the section **Design Plan** as a checklist.]{dir="ltr"}
+    > the section **Design Plan** as a checklist.]
 
 -   [**Questionnaires and standardized assessments:** For each
     > questionnaire and standardized assessment, mention the name and
-    > version.]{dir="ltr"}
+    > version.]
 
 -   [**Additional neuroimaging measures:** Give a description and brief
     > purpose statement of any other imaging modalities that will be
     > included in your study (e.g., EEG, Neuromodulation (TMS, tDCS,
-    > ...)).]{dir="ltr"}
+    > ...)).]
 
 -   [**Physiological recordings:** Give a description and brief purpose
     > statement of any physiological data that will be collected from
@@ -579,35 +457,35 @@ example:]{dir="ltr"}
     > pulse, electrocardiography, plethysmography (pulse oximetry),
     > respiration, blood pressure, blood samples, skin conductance
     > (SCR), electromyography, etc.). For each measure, mention the
-    > device.]{dir="ltr"}
+    > device.]
 
-[]{dir="ltr"}
+
 
 [*Note that parts of this section may be covered in the Design Plan
-section instead.*]{dir="ltr"}
+section instead.*]
 
-[Sample Size\*]{dir="ltr"}
+[Sample Size\*]
 --------------------------
 
 [State your target sample size and, if applicable, your stopping rule.
-Justify your choices.]{dir="ltr"}
+Justify your choices.]
 
-[Justification of sample size or stopping rule:]{dir="ltr"}
+[Justification of sample size or stopping rule:]
 
-[]{dir="ltr"}
 
-  [\_\_or NA]{dir="ltr"}   [Power Analysis for fMRI or behavioral analysis. Please provide all details on your calculation. (strongly recommended, no standard procedures for fMRI power analysis but see [[https://brainpower.readthedocs.io/en/latest/index.html]{.underline}](https://brainpower.readthedocs.io/en/latest/index.html) for available tools)]{dir="ltr"}
+
+  [__or NA]   [Power Analysis for fMRI or behavioral analysis. Please provide all details on your calculation. (strongly recommended, no standard procedures for fMRI power analysis but see [[https://brainpower.readthedocs.io/en/latest/index.html]{.underline}](https://brainpower.readthedocs.io/en/latest/index.html) for available tools)]
   ------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [\_\_or NA]{dir="ltr"}   [Time constraints (e.g., will recruit for one year or until X date)]{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}   [Money constraints (e.g., monetary support will support up to X subjects)]{dir="ltr"}
-  [\_\_or NA]{dir="ltr"}   [Personnel constraints (e.g., will recruit for time period in which personnel support is available)]{dir="ltr"}
-  [\_\_]{dir="ltr"}        [Other: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_]{dir="ltr"}
+  [__or NA]   [Time constraints (e.g., will recruit for one year or until X date)]
+  [__or NA]   [Money constraints (e.g., monetary support will support up to X subjects)]
+  [__or NA]   [Personnel constraints (e.g., will recruit for time period in which personnel support is available)]
+  [__]        [Other: ___________________]
 
 [If possible, include contingencies for if your target sample size is
 not met. E.g., how will hypotheses be adopted to better powered
-question?]{dir="ltr"}
+question?]
 
-[Variables]{dir="ltr"}
+[Variables]
 ======================
 
 [*In this section you can describe all variables (both manipulated and
@@ -615,64 +493,64 @@ measured variables) that will later be used in your analysis plan. In
 your analysis plan, you will have the opportunity to describe how each
 variable will be used. If you have variables which you are measuring for
 exploratory analyses, you are not required to list them, though you are
-permitted to do so.*]{dir="ltr"}
+permitted to do so.*]
 
-[Manipulated variables]{dir="ltr"}
+[Manipulated variables]
 ----------------------------------
 
 [Describe all variables you plan to manipulate and the levels or
 treatment arms of each variable. This is not applicable to an
-observational study.]{dir="ltr"}
+observational study.]
 
-[Measured variables\*]{dir="ltr"}
+[Measured variables\*]
 ---------------------------------
 
-[Behavioral data]{dir="ltr"}
+[Behavioral data]
 
 [Describe each variable that you will measure and indicate the
 corresponding confirmatory hypothesis. You can use the checklist
-below.]{dir="ltr"}
+below.]
 
 +-----------------------------------+-----------------------------------+
 | **[Measured                       |                                   |
-| variables]{dir="ltr"}**           |                                   |
+| variables]**           |                                   |
 +===================================+===================================+
 | [\                                | [**Outcome** measures/dependent   |
 | \                                 | variables (specify whether        |
-| \_\_]{dir="ltr"}                  | confirmatory or exploratory       |
+| __]                  | confirmatory or exploratory       |
 |                                   | outcome, how variable was         |
 |                                   | measured, scale/range of measure, |
 |                                   | which subscale/component of       |
 |                                   | measure you will                  |
-|                                   | use).]{dir="ltr"}                 |
+|                                   | use).]                 |
 +-----------------------------------+-----------------------------------+
 | [\                                | [**Predictor**                    |
-| \_\_]{dir="ltr"}                  | measures/independent variables    |
+| __]                  | measures/independent variables    |
 |                                   | (specific measure, scale/range of |
 |                                   | measure, which subscale/component |
 |                                   | of measure you will               |
-|                                   | use).]{dir="ltr"}                 |
+|                                   | use).]                 |
 +-----------------------------------+-----------------------------------+
 | [\                                | [**Covariate** measures (specific |
-| \_\_or NA]{dir="ltr"}             | measure, scale/range of measure,  |
+| __or NA]             | measure, scale/range of measure,  |
 |                                   | which subscale/component of       |
 |                                   | measure you will                  |
-|                                   | use).]{dir="ltr"}                 |
+|                                   | use).]                 |
 +-----------------------------------+-----------------------------------+
-| **[Quality control]{dir="ltr"}**  |                                   |
+| **[Quality control]**  |                                   |
 +-----------------------------------+-----------------------------------+
 | [\                                | [Any outcome-neutral criteria     |
 | \                                 | that must be met for successful   |
 | \                                 | testing of the stated hypotheses. |
-| \_\_]{dir="ltr"}                  | Such quality checks might include |
+| __]                  | Such quality checks might include |
 |                                   | the absence of floor or ceiling   |
 |                                   | effects in data distributions,    |
 |                                   | positive controls, or other       |
 |                                   | quality checks that are           |
 |                                   | orthogonal to the experimental    |
-|                                   | hypotheses.]{dir="ltr"}           |
+|                                   | hypotheses.]           |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [How will you determine which     |
+| [__or NA]            | [How will you determine which     |
 |                                   | subjects, data points or measures |
 |                                   | (if any) to **exclude** from your |
 |                                   | analyses? If possible, specify    |
@@ -681,21 +559,21 @@ below.]{dir="ltr"}
 |                                   | reactions, instructions not       |
 |                                   | understood, accuracy below a      |
 |                                   | certain threshold, or for any     |
-|                                   | other reasons).]{dir="ltr"}       |
+|                                   | other reasons).]       |
 +-----------------------------------+-----------------------------------+
-| []{dir="ltr"}                     | [How will you deal with           |
+|                      | [How will you deal with           |
 |                                   | incomplete or missing data (e.g., |
-| [\_\_or NA]{dir="ltr"}            | missing timepoints or             |
+| [__or NA]            | missing timepoints or             |
 |                                   | missing/incomplete data within or |
 |                                   | between runs; what percent        |
 |                                   | missing will be included)? Under  |
 |                                   | what conditions would data be     |
-|                                   | replaced and how?]{dir="ltr"}     |
+|                                   | replaced and how?]     |
 +-----------------------------------+-----------------------------------+
 | [\                                | [If possible, define contingency  |
 | \                                 | plans how to proceed in such      |
 | \                                 | cases, (e.g., plans if x% of      |
-| \_\_or NA]{dir="ltr"}             | behavioral data is missing; if    |
+| __or NA]             | behavioral data is missing; if    |
 |                                   | the X questionnaire is missing    |
 |                                   | for more than 10% of participants |
 |                                   | we will not use it or if X does   |
@@ -706,17 +584,17 @@ below.]{dir="ltr"}
 |                                   | we will not use that              |
 |                                   | questionnaire and use Y           |
 |                                   | questionnaire                     |
-|                                   | instead).]{dir="ltr"}             |
+|                                   | instead).]             |
 +-----------------------------------+-----------------------------------+
-| **[Transformations]{dir="ltr"}**  |                                   |
+| **[Transformations]**  |                                   |
 +-----------------------------------+-----------------------------------+
-| []{dir="ltr"}                     | [If you plan on transforming,     |
+|                      | [If you plan on transforming,     |
 |                                   | centering, recoding the data, or  |
-| []{dir="ltr"}                     | will require a coding scheme for  |
+|                      | will require a coding scheme for  |
 |                                   | categorical variables, please     |
-| []{dir="ltr"}                     | describe that                     |
-|                                   | process.]{dir="ltr"}              |
-| [\_\_or NA]{dir="ltr"}            |                                   |
+|                      | describe that                     |
+|                                   | process.]              |
+| [__or NA]            |                                   |
 |                                   | [Include contingency plans for    |
 |                                   | transformation: (e.g.,            |
 |                                   | transformations that will occur   |
@@ -724,45 +602,45 @@ below.]{dir="ltr"}
 |                                   | convergence/multicollinearity)]{d |
 |                                   | ir="ltr"}                         |
 +-----------------------------------+-----------------------------------+
-| **[Code]{dir="ltr"}**             | []{dir="ltr"}                     |
+| **[Code]**             |                      |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Link to shared code for scoring  |
-|                                   | behavioral data.]{dir="ltr"}      |
+| [__or NA]            | [Link to shared code for scoring  |
+|                                   | behavioral data.]      |
 +-----------------------------------+-----------------------------------+
 
-[]{dir="ltr"}
 
-[]{dir="ltr"}
 
-[fMRI data]{dir="ltr"}
+
+
+[fMRI data]
 
 [Describe what variable will be measured (e.g., BOLD response) and
 detail all preprocessing steps. You can fill in the table or write
 paragraph below as you would for paper and use the table as checklist of
-topics covered.]{dir="ltr"}
+topics covered.]
 
 [For each piece of software used, give the version number. Also indicate
-which platform you ran the software on.]{dir="ltr"}
+which platform you ran the software on.]
 
 +-----------------------+-----------------------+-----------------------+
 | [**Quality            | **[software,          |                       |
-| control**]{dir="ltr"} | version]{dir="ltr"}** |                       |
+| control**] | version]** |                       |
 +=======================+=======================+=======================+
-| [\                    | [incidental findings  | []{dir="ltr"}         |
+| [\                    | [incidental findings  |          |
 | \                     | (Protocol for review  |                       |
-| \_\_or NA]{dir="ltr"} | of any incidental     |                       |
+| __or NA] | of any incidental     |                       |
 |                       | findings, and how     |                       |
 |                       | they are handled in   |                       |
 |                       | particular with       |                       |
 |                       | respect to possible   |                       |
 |                       | exclusion of a        |                       |
 |                       | subject's             |                       |
-|                       | data.)]{dir="ltr"}    |                       |
+|                       | data.)]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [motion monitoring    | []{dir="ltr"}         |
+| [\                    | [motion monitoring    |          |
 | \                     | (For functional       |                       |
 | \                     | acquisitions, any     |                       |
-| \_\_]{dir="ltr"}      | visual or qualitative |                       |
+| __]      | visual or qualitative |                       |
 |                       | checks for severe     |                       |
 |                       | motion; likewise, for |                       |
 |                       | structural images,    |                       |
@@ -775,19 +653,19 @@ which platform you ran the software on.]{dir="ltr"}
 |                       | correction?]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [How will you         | []{dir="ltr"}         |
+|          | [How will you         |          |
 |                       | determine which data  |                       |
-| []{dir="ltr"}         | points or samples (if |                       |
+|          | points or samples (if |                       |
 |                       | any) to exclude from  |                       |
-| []{dir="ltr"}         | your analyses? How    |                       |
+|          | your analyses? How    |                       |
 |                       | will outliers be      |                       |
-| []{dir="ltr"}         | defined and           |                       |
-|                       | handled?]{dir="ltr"}  |                       |
-| []{dir="ltr"}         |                       |                       |
+|          | defined and           |                       |
+|                       | handled?]  |                       |
+|          |                       |                       |
 |                       | [If possible, specify |                       |
-| [\_\_]{dir="ltr"}     | objective exclusion   |                       |
+| [__]     | objective exclusion   |                       |
 |                       | criteria,             |                       |
-|                       | e.g.]{dir="ltr"}      |                       |
+|                       | e.g.]      |                       |
 |                       |                       |                       |
 |                       | -   [a participant    |                       |
 |                       |     has X percentage  |                       |
@@ -806,16 +684,16 @@ which platform you ran the software on.]{dir="ltr"}
 |                       |     band stripes,     |                       |
 |                       |     respiration-relat |                       |
 |                       | ed                    |                       |
-|                       |     ... )]{dir="ltr"} |                       |
+|                       |     ... )] |                       |
 |                       |                       |                       |
 |                       | -   [registration     |                       |
 |                       |     fails because of  |                       |
 |                       |     atrophy, brain    |                       |
 |                       |     lesion            |                       |
-|                       |     ...]{dir="ltr"}   |                       |
+|                       |     ...]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [How will you deal    | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | with incomplete or    |                       |
+| [__or               | [How will you deal    |          |
+| NA]        | with incomplete or    |                       |
 |                       | missing data (e.g.,   |                       |
 |                       | missing timepoints or |                       |
 |                       | missing/incomplete    |                       |
@@ -825,11 +703,11 @@ which platform you ran the software on.]{dir="ltr"}
 |                       | be included)? Under   |                       |
 |                       | what conditions would |                       |
 |                       | data be               |                       |
-|                       | replaced?]{dir="ltr"} |                       |
+|                       | replaced?] |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [Other quantitative   | []{dir="ltr"}         |
+| [\                    | [Other quantitative   |          |
 | \                     | quality control       |                       |
-| \_\_or NA]{dir="ltr"} | metrics               |                       |
+| __or NA] | metrics               |                       |
 |                       | (signal-to-noise      |                       |
 |                       | ratio,                |                       |
 |                       | contrast-to-noise     |                       |
@@ -843,7 +721,7 @@ which platform you ran the software on.]{dir="ltr"}
 |                       | factor into the       |                       |
 |                       | decision to exclude   |                       |
 |                       | subjects? If so,      |                       |
-|                       | how?]{dir="ltr"}      |                       |
+|                       | how?]      |                       |
 +-----------------------+-----------------------+-----------------------+
 | [**Anatomical         |                       |                       |
 | preprocessing** (e.g. |                       |                       |
@@ -853,44 +731,44 @@ which platform you ran the software on.]{dir="ltr"}
 | functional)]{dir="ltr |                       |                       |
 | "}                    |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Intensity            | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | non-uniformity        |                       |
+| [__or               | [Intensity            |          |
+| NA]        | non-uniformity        |                       |
 |                       | correction]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [brain                | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | extraction]{dir="ltr" |                       |
+| [__or               | [brain                |          |
+| NA]        | extraction]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [tissue               | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | segmentation]{dir="lt |                       |
+| [__or               | [tissue               |          |
+| NA]        | segmentation]{dir="lt |                       |
 |                       | r"}                   |                       |
 +-----------------------+-----------------------+-----------------------+
 | **[Functional         |                       |                       |
 | preprocessing]{dir="l |                       |                       |
 | tr"}**                |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [Remove first volumes | []{dir="ltr"}         |
-| \_\_or NA]{dir="ltr"} | to reach steady-state |                       |
+| [\                    | [Remove first volumes |          |
+| __or NA] | to reach steady-state |                       |
 |                       | (during acquisition   |                       |
 |                       | or preprocessing)?    |                       |
 |                       | How many volumes were |                       |
 |                       | discarded?]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [**Distortion         | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | correction**          |                       |
+| [__or               | [**Distortion         |          |
+| NA]        | correction**          |                       |
 |                       | (fieldmap, ap-pa      |                       |
 |                       | acquisitions)]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [**Intensity          | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | normalization**]{dir= |                       |
+| [__or               | [**Intensity          |          |
+| NA]        | normalization**]{dir= |                       |
 |                       | "ltr"}                |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**\                  | [**Slice timing       | []{dir="ltr"}         |
-| **\_\_or              | correction** (specify |                       |
-| NA]{dir="ltr"}        | reference slice,      |                       |
+| [**\                  | [**Slice timing       |          |
+| **__or              | correction** (specify |                       |
+| NA]        | reference slice,      |                       |
 |                       | e.g., first slice,    |                       |
 |                       | and interpolation,    |                       |
 |                       | e.g., Fourier phase   |                       |
@@ -898,88 +776,88 @@ which platform you ran the software on.]{dir="ltr"}
 |                       | interpolation)]{dir=" |                       |
 |                       | ltr"}                 |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**\                  | [**Primary motion     | []{dir="ltr"}         |
+| [**\                  | [**Primary motion     |          |
 | \                     | correction            |                       |
-| **\_\_or              | (realignment)**       |                       |
-| NA]{dir="ltr"}        | (reference scan for   |                       |
+| **__or              | (realignment)**       |                       |
+| NA]        | (reference scan for   |                       |
 |                       | realignment, image    |                       |
 |                       | similarity metric,    |                       |
 |                       | type of interpolation |                       |
 |                       | used,                 |                       |
 |                       | degrees-of-freedom    |                       |
 |                       | and optimization      |                       |
-|                       | method)]{dir="ltr"}   |                       |
+|                       | method)]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [**Intrasubject       | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | registration (e.g.    |                       |
+| [__or               | [**Intrasubject       |          |
+| NA]        | registration (e.g.    |                       |
 |                       | anatomical to         |                       |
 |                       | functional)**]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**\                  | [Directionality (e.g. | []{dir="ltr"}         |
-| **\_\_or              | anatomical to         |                       |
-| NA]{dir="ltr"}        | functional,           |                       |
+| [**\                  | [Directionality (e.g. |          |
+| **__or              | anatomical to         |                       |
+| NA]        | functional,           |                       |
 |                       | functional session 1  |                       |
 |                       | to functional session |                       |
-|                       | 2, etc)]{dir="ltr"}   |                       |
+|                       | 2, etc)]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Transformation model | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | (linear or            |                       |
+| [__or               | [Transformation model |          |
+| NA]        | (linear or            |                       |
 |                       | nonlinear)]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Degrees of           | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | freedom]{dir="ltr"}   |                       |
+| [__or               | [Degrees of           |          |
+| NA]        | freedom]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Interpolation        | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | method]{dir="ltr"}    |                       |
+| [__or               | [Interpolation        |          |
+| NA]        | method]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Image similarity     | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | metric]{dir="ltr"}    |                       |
+| [__or               | [Image similarity     |          |
+| NA]        | metric]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | **[Intersubject       | []{dir="ltr"}         |
-| \_\_or NA]{dir="ltr"} | registration (e.g.    |                       |
+| [\                    | **[Intersubject       |          |
+| __or NA] | registration (e.g.    |                       |
 |                       | anatomical/functional |                       |
 |                       | to                    |                       |
-|                       | template)]{dir="ltr"} |                       |
+|                       | template)] |                       |
 |                       | **                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**\                  | [Brain image template | []{dir="ltr"}         |
-| **\_\_or              | space, name, modality |                       |
-| NA]{dir="ltr"}        | and resolution (e.g., |                       |
+| [**\                  | [Brain image template |          |
+| **__or              | space, name, modality |                       |
+| NA]        | and resolution (e.g., |                       |
 |                       | MNI Avg152, T1 2 × 2  |                       |
 |                       | × 2 mm; customized    |                       |
 |                       | sample                |                       |
-|                       | template)]{dir="ltr"} |                       |
+|                       | template)] |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**\                  | [Directionality (e.g. | []{dir="ltr"}         |
-| **\_\_or              | anatomical to         |                       |
-| NA]{dir="ltr"}        | functional,           |                       |
+| [**\                  | [Directionality (e.g. |          |
+| **__or              | anatomical to         |                       |
+| NA]        | functional,           |                       |
 |                       | functional session 1  |                       |
 |                       | to functional session |                       |
-|                       | 2, etc)]{dir="ltr"}   |                       |
+|                       | 2, etc)]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Transformation model | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | (linear or            |                       |
+| [__or               | [Transformation model |          |
+| NA]        | (linear or            |                       |
 |                       | nonlinear)]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Degrees of           | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | freedom]{dir="ltr"}   |                       |
+| [__or               | [Degrees of           |          |
+| NA]        | freedom]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Interpolation        | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | method]{dir="ltr"}    |                       |
+| [__or               | [Interpolation        |          |
+| NA]        | method]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Image similarity     | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | metric]{dir="ltr"}    |                       |
+| [__or               | [Image similarity     |          |
+| NA]        | metric]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**\                  | **[Smoothing]{dir="lt | []{dir="ltr"}         |
+| [**\                  | **[Smoothing]{dir="lt |          |
 | \                     | r"}**                 |                       |
 | \                     |                       |                       |
 | \                     | [Size and type of     |                       |
 | \                     | smoothing kernel      |                       |
-| **\_\_or              | (provide              |                       |
-| NA]{dir="ltr"}        | justification for     |                       |
+| **__or              | (provide              |                       |
+| NA]        | justification for     |                       |
 |                       | size; e.g., for a     |                       |
 |                       | group study, "12 mm   |                       |
 |                       | FHWM Gaussian         |                       |
@@ -992,18 +870,18 @@ which platform you ran the software on.]{dir="ltr"}
 |                       | "6 mm FWHM Gaussian   |                       |
 |                       | smoothing used to     |                       |
 |                       | reduce                |                       |
-|                       | noise")]{dir="ltr"}   |                       |
+|                       | noise")]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [**Temporal           | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | filtering** (type of  |                       |
+| [__or               | [**Temporal           |          |
+| NA]        | filtering** (type of  |                       |
 |                       | filter, frequency     |                       |
-|                       | band)]{dir="ltr"}     |                       |
+|                       | band)]     |                       |
 +-----------------------+-----------------------+-----------------------+
 | [**Flowchart**]{dir=" |                       |                       |
 | ltr"}                 |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [A flowchart can be   | []{dir="ltr"}         |
-| \_\_or NA]{dir="ltr"} | attached that depicts |                       |
+| [\                    | [A flowchart can be   |          |
+| __or NA] | attached that depicts |                       |
 |                       | the order of the      |                       |
 |                       | preprocessing steps   |                       |
 |                       | for each acquisition  |                       |
@@ -1011,14 +889,14 @@ which platform you ran the software on.]{dir="ltr"}
 |                       | functional).]{dir="lt |                       |
 |                       | r"}                   |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[Code]{dir="ltr"}** | []{dir="ltr"}         | []{dir="ltr"}         |
+| **[Code]** |          |          |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Link to shared code  | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | for preprocessing     |                       |
-|                       | data]{dir="ltr"}      |                       |
+| [__or               | [Link to shared code  |          |
+| NA]        | for preprocessing     |                       |
+|                       | data]      |                       |
 +-----------------------+-----------------------+-----------------------+
 
-[Analysis Plan]{dir="ltr"}
+[Analysis Plan]
 ==========================
 
 [*In this section, you describe all confirmatory analyses you plan to
@@ -1026,60 +904,60 @@ conduct. Be as specific as possible (e.g. assign each hypothesis to be
 tested to the corresponding model in this section; specify the usage of
 covariates in sensitivity analyses and the selection of regions of
 interest). If you plan to include additional fMRI analyses techniques,
-check Appendix 3 for checklists.*]{dir="ltr"}
+check Appendix 3 for checklists.*]
 
-[Statistical modeling\*]{dir="ltr"}
+[Statistical modeling\*]
 -----------------------------------
 
-[Behavioral analysis]{dir="ltr"}
+[Behavioral analysis]
 
 [Specify all analyses to test your hypotheses. Remember that all
 confirmatory analyses specified below must be reported in the final
 article, and any additional analyses must be noted as exploratory or
 hypothesis generating. For each hypothesis, include the following
-information:]{dir="ltr"}
+information:]
 
 +-----------------------------------+-----------------------------------+
 | [\                                | [Statistical model (e.g., ANOVA,  |
-| \_\_]{dir="ltr"}                  | multiple regression, etc.) and    |
+| __]                  | multiple regression, etc.) and    |
 |                                   | its specification (that includes  |
 |                                   | each variable that will be        |
 |                                   | included as predictor/factor      |
 |                                   | (incl. its levels), outcome, or   |
-|                                   | covariate).]{dir="ltr"}           |
+|                                   | covariate).]           |
 +===================================+===================================+
-| [\_\_or NA]{dir="ltr"}            | [Specify any interactions that    |
-|                                   | will be tested]{dir="ltr"}        |
+| [__or NA]            | [Specify any interactions that    |
+|                                   | will be tested]        |
 +-----------------------------------+-----------------------------------+
-| [\_\_]{dir="ltr"}                 | [Name assumptions that need to be |
+| [__]                 | [Name assumptions that need to be |
 |                                   | met and how they will be          |
-|                                   | tested]{dir="ltr"}                |
+|                                   | tested]                |
 +-----------------------------------+-----------------------------------+
-| [\_\_]{dir="ltr"}                 | [Include a contingency plan in    |
+| [__]                 | [Include a contingency plan in    |
 |                                   | case assumptions are not          |
-|                                   | met]{dir="ltr"}                   |
+|                                   | met]                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_]{dir="ltr"}                 | [Include software and packages    |
-|                                   | used for each test]{dir="ltr"}    |
+| [__]                 | [Include software and packages    |
+|                                   | used for each test]    |
 +-----------------------------------+-----------------------------------+
-| []{dir="ltr"}                     | [What criteria will you use to    |
+|                      | [What criteria will you use to    |
 |                                   | make inferences? Please describe  |
-| [\_\_]{dir="ltr"}                 | the information you'll use (e.g.  |
+| [__]                 | the information you'll use (e.g.  |
 |                                   | p-values, Bayes factors, specific |
 |                                   | model fit indices), as well as    |
 |                                   | cut-off criterion, where          |
-|                                   | appropriate.]{dir="ltr"}          |
+|                                   | appropriate.]          |
 +-----------------------------------+-----------------------------------+
-| [\_\_]{dir="ltr"}                 | [Note whether you will adjust for |
+| [__]                 | [Note whether you will adjust for |
 |                                   | multiple comparisons and how      |
 |                                   | (e.g. correction procedure,       |
 |                                   | number of tests included ...) or  |
-|                                   | explain why not.]{dir="ltr"}      |
+|                                   | explain why not.]      |
 +-----------------------------------+-----------------------------------+
 
-[]{dir="ltr"}
 
-[fMRI analysis]{dir="ltr"}
+
+[fMRI analysis]
 
 [Specify all analyses to test each hypothesis. Please include the type
 of model and the specification of the model (this includes each variable
@@ -1087,51 +965,51 @@ that will be included as predictors, outcomes, or covariates). Also
 specify any interactions that will be tested. Remember that all
 confirmatory analyses specified below must be reported in the final
 article, and any additional analyses must be noted as exploratory or
-hypothesis generating.]{dir="ltr"}
+hypothesis generating.]
 
 [Specify whether you plan to perform whole-brain or ROI-analysis. In
 case of ROI, be specific (e.g. defined based on anatomical definition,
 prior study cluster, Neurosynth definition, Parcellation definition).
 List regressors of interest at the neural level and corresponding
 confirmatory hypothesis. If applicable, describe covariate
-measures.]{dir="ltr"}
+measures.]
 
 [For necessary details regarding functional connectivity and decoding
-analysis, please see **Appendix 4**.]{dir="ltr"}
+analysis, please see **Appendix 4**.]
 
-[]{dir="ltr"}
 
-[]{dir="ltr"}
+
+
 
 +-----------------------+-----------------------+-----------------------+
-| [**Individual (first) | []{dir="ltr"}         |                       |
+| [**Individual (first) |          |                       |
 | level                 |                       |                       |
 | modeling**]{dir="ltr" |                       |                       |
 | }                     |                       |                       |
 +=======================+=======================+=======================+
-| [\_\_]{dir="ltr"}     | [Event­-related       | []{dir="ltr"}         |
+| [__]     | [Event­-related       |          |
 |                       | predictors (modeled   |                       |
 |                       | duration (or zero),   |                       |
 |                       | whether parametric    |                       |
 |                       | modulation is         |                       |
-|                       | used)]{dir="ltr"}     |                       |
+|                       | used)]     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Block Design         | []{dir="ltr"}         |
+| [__]     | [Block Design         |          |
 |                       | predictors (note      |                       |
 |                       | whether or not        |                       |
 |                       | baseline will be      |                       |
 |                       | explicitly            |                       |
-|                       | modeled)]{dir="ltr"}  |                       |
+|                       | modeled)]  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Include design       | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | matrix and            |                       |
+| [__or               | [Include design       |          |
+| NA]        | matrix and            |                       |
 |                       | efficiency/collineari |                       |
 |                       | ty                    |                       |
 |                       | measure               |                       |
 |                       | (recommended)]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [HRF basis (e.g.      | []{dir="ltr"}         |
+| [__]     | [HRF basis (e.g.      |          |
 |                       | canonical only,       |                       |
 |                       | canonical with        |                       |
 |                       | temporal derivative,  |                       |
@@ -1139,15 +1017,15 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | dispersion            |                       |
 |                       | derivative, Finite    |                       |
 |                       | Impulse Response      |                       |
-|                       | model)]{dir="ltr"}    |                       |
+|                       | model)]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Movement regressors; | []{dir="ltr"}         |
+| [__]     | [Movement regressors; |          |
 |                       | specify if squares    |                       |
 |                       | and/or temporal       |                       |
 |                       | derivative            |                       |
-|                       | used.]{dir="ltr"}     |                       |
+|                       | used.]     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Any other nuisance   | []{dir="ltr"}         |
+| [__]     | [Any other nuisance   |          |
 |                       | regressors, and       |                       |
 |                       | whether they were     |                       |
 |                       | entered as            |                       |
@@ -1155,18 +1033,18 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | with a task effect in |                       |
 |                       | 1st level fMRI, or    |                       |
 |                       | with group            |                       |
-|                       | effect).]{dir="ltr"}  |                       |
+|                       | effect).]  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Any                  | []{dir="ltr"}         |
+| [__]     | [Any                  |          |
 |                       | orthogonalization of  |                       |
 |                       | regressors or         |                       |
 |                       | parametric            |                       |
 |                       | modulators, and set   |                       |
 |                       | of other regressors   |                       |
 |                       | used to orthogonalize |                       |
-|                       | against.]{dir="ltr"}  |                       |
+|                       | against.]  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Contrast             | []{dir="ltr"}         |
+| [__]     | [Contrast             |          |
 |                       | construction (Exactly |                       |
 |                       | what terms are        |                       |
 |                       | subtracted from what? |                       |
@@ -1175,13 +1053,13 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | conditions instead of |                       |
 |                       | underlying            |                       |
 |                       | psychological         |                       |
-|                       | concepts.]{dir="ltr"} |                       |
+|                       | concepts.] |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Model                | []{dir="ltr"}         |
-|                       | settings]{dir="ltr"}  |                       |
-| []{dir="ltr"}         |                       |                       |
+| [__]     | [Model                |          |
+|                       | settings]  |                       |
+|          |                       |                       |
 |                       | -   [For              |                       |
-| []{dir="ltr"}         |     > *mass-­univaria |                       |
+|          |     > *mass-­univaria |                       |
 |                       | te                    |                       |
 |                       |     > first level     |                       |
 |                       |     > fMRI,* these    |                       |
@@ -1207,16 +1085,16 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       |     > settings.]{dir= |                       |
 |                       | "ltr"}                |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**Group              | []{dir="ltr"}         |                       |
+| [**Group              |          |                       |
 | (second)-level        |                       |                       |
 | modeling**]{dir="ltr" |                       |                       |
 | }                     |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [State and justify    | []{dir="ltr"}         |
+|          | [State and justify    |          |
 |                       | statistical model and |                       |
-| []{dir="ltr"}         | estimation method,    |                       |
+|          | estimation method,    |                       |
 |                       | inference type        |                       |
-| [\_\_]{dir="ltr"}     | (mixed/random effects |                       |
+| [__]     | (mixed/random effects |                       |
 |                       | or fixed), e.g.,      |                       |
 |                       | "Mixed effects        |                       |
 |                       | inference with one    |                       |
@@ -1230,21 +1108,21 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | approximation to      |                       |
 |                       | posterior probability |                       |
 |                       | of activation."       |                       |
-|                       | (FSL).]{dir="ltr"}    |                       |
+|                       | (FSL).]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If more than         | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | 2-levels, describe    |                       |
+| [__or               | [If more than         |          |
+| NA]        | 2-levels, describe    |                       |
 |                       | the levels and        |                       |
 |                       | assumptions of the    |                       |
 |                       | model (e.g., are      |                       |
 |                       | variances assumed     |                       |
 |                       | equal between         |                       |
-|                       | groups)]{dir="ltr"}   |                       |
+|                       | groups)]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [If multiple          | []{dir="ltr"}         |
+| [\                    | [If multiple          |          |
 | \                     | measurements per      |                       |
 | \                     | subject, list method  |                       |
-| \_\_or NA]{dir="ltr"} | to account for within |                       |
+| __or NA] | to account for within |                       |
 |                       | subject correlation,  |                       |
 |                       | exact assumptions     |                       |
 |                       | made about            |                       |
@@ -1265,9 +1143,9 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | estimated..."]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [For group model with | []{dir="ltr"}         |
+| [\                    | [For group model with |          |
 | \                     | repeated measures,    |                       |
-| \_\_or NA]{dir="ltr"} | specify how condition |                       |
+| __or NA] | specify how condition |                       |
 |                       | effects are modeled   |                       |
 |                       | (e.g. as factors, or  |                       |
 |                       | as linear trends),    |                       |
@@ -1279,8 +1157,8 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | structure).]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [For group effects:   | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | clearly state whether |                       |
+| [__or               | [For group effects:   |          |
+| NA]        | clearly state whether |                       |
 |                       | or not covariates are |                       |
 |                       | split by group (i.e.  |                       |
 |                       | fit as a              |                       |
@@ -1288,9 +1166,9 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | interaction).]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Model type (e.g.,    | []{dir="ltr"}         |
+|          | [Model type (e.g.,    |          |
 |                       | Mass Univariate,      |                       |
-| [\_\_]{dir="ltr"}     | Multivariate (e.g.    |                       |
+| [__]     | Multivariate (e.g.    |                       |
 |                       | ICA on whole brain    |                       |
 |                       | data), Local          |                       |
 |                       | Multivariate (e.g.    |                       |
@@ -1299,31 +1177,31 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | Similarity Analysis,  |                       |
 |                       | psychophysiological   |                       |
 |                       | interaction           |                       |
-|                       | (PPI))]{dir="ltr"}    |                       |
+|                       | (PPI))]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Model                | []{dir="ltr"}         |
-|                       | settings]{dir="ltr"}  |                       |
-| []{dir="ltr"}         |                       |                       |
+|          | [Model                |          |
+|                       | settings]  |                       |
+|          |                       |                       |
 |                       | -   [For              |                       |
-| []{dir="ltr"}         |     > *mass-­univaria |                       |
+|          |     > *mass-­univaria |                       |
 |                       | te                    |                       |
-| []{dir="ltr"}         |     > group level     |                       |
+|          |     > group level     |                       |
 |                       |     > fMRI* these     |                       |
-| []{dir="ltr"}         |     > include fixed   |                       |
+|          |     > include fixed   |                       |
 |                       |     > effects (all    |                       |
-| []{dir="ltr"}         |     > subjects' data  |                       |
+|          |     > subjects' data  |                       |
 |                       |     > in one model),  |                       |
-| []{dir="ltr"}         |     > or random or    |                       |
+|          |     > or random or    |                       |
 |                       |     > mixed ­effects  |                       |
-| []{dir="ltr"}         |     > model           |                       |
+|          |     > model           |                       |
 |                       |     > (implemented    |                       |
-| []{dir="ltr"}         |     > with (1)        |                       |
+|          |     > with (1)        |                       |
 |                       |     > Ordinary least  |                       |
-| []{dir="ltr"}         |     > squares (OLS,   |                       |
+|          |     > squares (OLS,   |                       |
 |                       |     > aka unweighted  |                       |
-| []{dir="ltr"}         |     > summary         |                       |
+|          |     > summary         |                       |
 |                       |     > statistics      |                       |
-| [\_\_]{dir="ltr"}     |     > approach; SPM   |                       |
+| [__]     |     > approach; SPM   |                       |
 |                       |     > default, FSL    |                       |
 |                       |     > FEAT's "Simple  |                       |
 |                       |     > OLS"), (2)      |                       |
@@ -1388,27 +1266,27 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       |     > only).]{dir="lt |                       |
 |                       | r"}                   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**ROI                | []{dir="ltr"}         |                       |
+| [**ROI                |          |                       |
 | analysis**]{dir="ltr" |                       |                       |
 | }                     |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Will you limit your  | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | analysis to a         |                       |
+| [__or               | [Will you limit your  |          |
+| NA]        | analysis to a         |                       |
 |                       | specific ROI? (e.g.   |                       |
 |                       | unilateral,           |                       |
 |                       | cerebellum)]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [How will you define  | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | your ROI (e.g.,       |                       |
+| [__or               | [How will you define  |          |
+| NA]        | your ROI (e.g.,       |                       |
 |                       | functional,           |                       |
 |                       | anatomical,           |                       |
 |                       | meta-analysis, parcel |                       |
 |                       | localizer)?]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Justify definition   |                       |
-| NA]{dir="ltr"}        | of ROI and analysis   |                       |
+| [__or               | [Justify definition   |                       |
+| NA]        | of ROI and analysis   |                       |
 |                       | conducted with it:    |                       |
 |                       | (e.g., if your ROI is |                       |
 |                       | defined based on the  |                       |
@@ -1418,16 +1296,16 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | circular?)]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [How was signal       |                       |
-| NA]{dir="ltr"}        | extracted within      |                       |
+| [__or               | [How was signal       |                       |
+| NA]        | extracted within      |                       |
 |                       | ROI?(e.g., average    |                       |
 |                       | parameter estimates,  |                       |
 |                       | FIR                   |                       |
 |                       | deconvolution?)]{dir= |                       |
 |                       | "ltr"}                |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If percent signal    |                       |
-| NA]{dir="ltr"}        | change reported, how  |                       |
+| [__or               | [If percent signal    |                       |
+| NA]        | change reported, how  |                       |
 |                       | was scaling factor    |                       |
 |                       | determined]{dir="ltr" |                       |
 |                       | }                     |                       |
@@ -1439,27 +1317,27 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | regressor)?]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[Inference on       | []{dir="ltr"}         |                       |
+| **[Inference on       |          |                       |
 | statistic image       |                       |                       |
 | (thresholding)]{dir=" |                       |                       |
 | ltr"}**               |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Whole brain or a     | []{dir="ltr"}         |
+| [__]     | [Whole brain or a     |          |
 |                       | specific search       |                       |
 |                       | region? Specify type  |                       |
 |                       | of search region      |                       |
 |                       | analysis, and the     |                       |
 |                       | volume in voxels or   |                       |
-|                       | mm^3^)]{dir="ltr"}    |                       |
+|                       | mm^3^)]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If not whole brain,  | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | state how the region  |                       |
+| [__or               | [If not whole brain,  |          |
+| NA]        | state how the region  |                       |
 |                       | will be determined;   |                       |
 |                       | method for            |                       |
 |                       | constructing region   |                       |
 |                       | should be independent |                       |
 |                       | of present statistic  |                       |
-|                       | image:]{dir="ltr"}    |                       |
+|                       | image:]    |                       |
 |                       |                       |                       |
 |                       | -   [Carefully        |                       |
 |                       |     > describe any    |                       |
@@ -1509,45 +1387,45 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       |     > results.]{dir=" |                       |
 |                       | ltr"}                 |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_]{dir="ltr"}     | [Statistical type,    | []{dir="ltr"}         |
+| [__]     | [Statistical type,    |          |
 |                       | e.g., voxel-wise (aka |                       |
 |                       | peak­wise in SPM) or  |                       |
 |                       | cluster-wise (cluster |                       |
 |                       | size, cluster mass,   |                       |
 |                       | threshold­free        |                       |
 |                       | Cluster Enhancement   |                       |
-|                       | (TFCE)).]{dir="ltr"}  |                       |
+|                       | (TFCE)).]  |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [Statistical          | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | threshold used to     |                       |
+| [__or               | [Statistical          |          |
+| NA]        | threshold used to     |                       |
 |                       | infer significance    |                       |
 |                       | (e.g. p \<            |                       |
-|                       | 0.05)]{dir="ltr"}     |                       |
+|                       | 0.05)]     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If cluster-wise      | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | (cluster size or      |                       |
+| [__or               | [If cluster-wise      |          |
+| NA]        | (cluster size or      |                       |
 |                       | mass) significance,   |                       |
 |                       | state                 |                       |
 |                       | cluster-defining      |                       |
 |                       | threshold (e.g., P =  |                       |
-|                       | 0.001).]{dir="ltr"}   |                       |
+|                       | 0.001).]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [For all cluster­wise | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | methods, report       |                       |
+| [__or               | [For all cluster­wise |          |
+| NA]        | methods, report       |                       |
 |                       | neighborhood size     |                       |
 |                       | used to form clusters |                       |
 |                       | (e.g. 6, 18 or        |                       |
-|                       | 26).]{dir="ltr"}      |                       |
+|                       | 26).]      |                       |
 |                       |                       |                       |
-|                       | []{dir="ltr"}         |                       |
+|                       |          |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [For TFCE, report use | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | of non­default TFCE   |                       |
+| [__or               | [For TFCE, report use |          |
+| NA]        | of non­default TFCE   |                       |
 |                       | parameters.]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [P value computation. | []{dir="ltr"}         |
-| \_\_]{dir="ltr"}      | Report if anything    |                       |
+| [\                    | [P value computation. |          |
+| __]      | Report if anything    |                       |
 |                       | but standard          |                       |
 |                       | parametric inference  |                       |
 |                       | used to obtain        |                       |
@@ -1560,11 +1438,11 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | bootstrap) and number |                       |
 |                       | of                    |                       |
 |                       | permutations/samples  |                       |
-|                       | used.]{dir="ltr"}     |                       |
+|                       | used.]     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\                    | [Multiple test        | []{dir="ltr"}         |
+| [\                    | [Multiple test        |          |
 | \                     | correction. For       |                       |
-| \_\_]{dir="ltr"}      | mass­univariate,      |                       |
+| __]      | mass­univariate,      |                       |
 |                       | specify the type of   |                       |
 |                       | correction and how it |                       |
 |                       | is obtained, e.g.,    |                       |
@@ -1582,35 +1460,35 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | none/uncorrected.]{di |                       |
 |                       | r="ltr"}              |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If permutation or    | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | Monte Carlo, report   |                       |
+| [__or               | [If permutation or    |          |
+| NA]        | Monte Carlo, report   |                       |
 |                       | the number of         |                       |
 |                       | permutations/samples. |                       |
-|                       | ]{dir="ltr"}          |                       |
+|                       | ]          |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If Monte Carlo, note | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | brain mask and        |                       |
+| [__or               | [If Monte Carlo, note |          |
+| NA]        | brain mask and        |                       |
 |                       | smoothness used, and  |                       |
 |                       | how smoothness was    |                       |
 |                       | estimated.]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If FWE found by      | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | random field theory,  |                       |
+| [__or               | [If FWE found by      |          |
+| NA]        | random field theory,  |                       |
 |                       | list smoothness in mm |                       |
 |                       | FWHM and the RESEL    |                       |
-|                       | count.]{dir="ltr"}    |                       |
+|                       | count.]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If FWE found by      | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | simulation (e.g.,     |                       |
+| [__or               | [If FWE found by      |          |
+| NA]        | simulation (e.g.,     |                       |
 |                       | AFNI AlphaSim),       |                       |
 |                       | provide details of    |                       |
 |                       | parameters for        |                       |
 |                       | simulation.]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [If not a standard    | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | method, specify the   |                       |
+| [__or               | [If not a standard    |          |
+| NA]        | method, specify the   |                       |
 |                       | method for finding    |                       |
 |                       | significance (e.g.,   |                       |
 |                       | "Custom in-lab        |                       |
@@ -1620,10 +1498,10 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | at FDR\< 0.05         |                       |
 |                       | (Benjamini and        |                       |
 |                       | Hochberg,             |                       |
-|                       | 1995)"]{dir="ltr"}    |                       |
+|                       | 1995)"]    |                       |
 +-----------------------+-----------------------+-----------------------+
-| [\_\_or               | [False negative       | []{dir="ltr"}         |
-| NA]{dir="ltr"}        | discussion: Any       |                       |
+| [__or               | [False negative       |          |
+| NA]        | discussion: Any       |                       |
 |                       | discussion of failure |                       |
 |                       | to reject the null    |                       |
 |                       | hypothesis (e.g.,     |                       |
@@ -1636,31 +1514,31 @@ analysis, please see **Appendix 4**.]{dir="ltr"}
 |                       | (allows reader to     |                       |
 |                       | infer power to        |                       |
 |                       | estimate an           |                       |
-|                       | effect)]{dir="ltr"}   |                       |
+|                       | effect)]   |                       |
 +-----------------------+-----------------------+-----------------------+
 
-[]{dir="ltr"}
+
 
 *[Recommendations of fMRI details come from Nichols et al., 2016;
-Poldrack et al., 2008.]{dir="ltr"}*
+Poldrack et al., 2008.]*
 
 [*For extended checklist guidelines for this section following data
-analysis, see OHBM COBIDAS report Nichols et al., 2016.*]{dir="ltr"}
+analysis, see OHBM COBIDAS report Nichols et al., 2016.*]
 
-[]{dir="ltr"}
 
-[Follow-up Analyses]{dir="ltr"}
+
+[Follow-up Analyses]
 -------------------------------
 
 [If not specified previously, will you be conducting any confirmatory
 analyses to follow up on effects in your statistical model, such as
 subgroup analyses, pairwise or complex contrasts, or follow-up tests
 from interactions? Remember that any analyses not specified in this
-research plan must be noted as exploratory.]{dir="ltr"}
+research plan must be noted as exploratory.]
 
-[]{dir="ltr"}
 
-[Exploratory Analyses]{dir="ltr"} 
+
+[Exploratory Analyses] 
 ----------------------------------
 
 [If you plan to explore your data set to look for unexpected differences
@@ -1669,94 +1547,94 @@ is any test where a prediction is not made up front, or there are
 multiple possible tests that you are going to use. A statistically
 significant finding in an exploratory test is a great way to form a new
 confirmatory hypothesis, which could be registered at a later
-time.]{dir="ltr"}
+time.]
 
-[Appendices]{dir="ltr"}
+[Appendices]
 =======================
 
-[Appendix 1: Examples of fMRI study pre-registrations]{dir="ltr"}
+[Appendix 1: Examples of fMRI study pre-registrations]
 -----------------------------------------------------------------
 
 -   [Pre data collection preregistration following a structure similar
     > to the present template with extensive detail:
-    > [[https://osf.io/2zhve]{.underline}](https://osf.io/2zhve)]{dir="ltr"}
+    > [[https://osf.io/2zhve]{.underline}](https://osf.io/2zhve)]
 
 -   [Pre data collection preregistration with extensive detail in
     > flow-text:
-    > [[https://osf.io/7q68p/]{.underline}](https://osf.io/7q68p/)]{dir="ltr"}
+    > [[https://osf.io/7q68p/]{.underline}](https://osf.io/7q68p/)]
 
 -   [studies with standard preprocessing approaches (SPM, fMRIprep):
     > [[https://osf.io/5mx3w]{.underline}](https://osf.io/5mx3w);
     > [[https://osf.io/hndbq]{.underline}](https://osf.io/hndbq)
-    > \[previously collected data\]]{dir="ltr"}
+    > \[previously collected data\]]
 
 -   [concise preregistration of functional connectivity analyses of
     > existing data:
-    > [[https://osf.io/utqq2]{.underline}](https://osf.io/utqq2)]{dir="ltr"}
+    > [[https://osf.io/utqq2]{.underline}](https://osf.io/utqq2)]
 
 -   [methods analysis on publicly available datasets:
-    > [[https://osf.io/2jxdk/]{.underline}](https://osf.io/2jxdk/)]{dir="ltr"}
+    > [[https://osf.io/2jxdk/]{.underline}](https://osf.io/2jxdk/)]
 
 -   [Example of a multi-study pre-registration:
-    > [[https://osf.io/wzd8a]{.underline}](https://osf.io/wzd8a)]{dir="ltr"}
+    > [[https://osf.io/wzd8a]{.underline}](https://osf.io/wzd8a)]
 
- []{dir="ltr"}
+ 
 -------------
 
-[Appendix 2: fMRI data acquisition checklists]{dir="ltr"}
+[Appendix 2: fMRI data acquisition checklists]
 ---------------------------------------------------------
 
 [*If your study includes multiple different scanners, or if multiple
 different sequences of the same category are used (e.g. multiple
 functional MRI sequences), please fill out a separate table for each
-scanner and sequence. *]{dir="ltr"}
+scanner and sequence. *]
 
-[]{dir="ltr"}
 
-**[Participant preparation]{dir="ltr"}**
 
-  [Test scanning (Report type of (mock) scanner and protocol; i.e. duration, types of simulated scans, experiments).]{dir="ltr"}   [\_\_or NA]{dir="ltr"}
+**[Participant preparation]**
+
+  [Test scanning (Report type of (mock) scanner and protocol; i.e. duration, types of simulated scans, experiments).]   [__or NA]
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------
-  [Special equipment to reduce/monitor head motion (head cases, prospective motion tracking ...)]{dir="ltr"}                       [\_\_or NA]{dir="ltr"}
-  [Specific accommodations (e.g., pediatric, parent present, asleep)]{dir="ltr"}                                                   [\_\_or NA]{dir="ltr"}
-  [Experimental personnel (number of planned personnel to interact with participants)]{dir="ltr"}                                  [\_\_or NA]{dir="ltr"}
+  [Special equipment to reduce/monitor head motion (head cases, prospective motion tracking ...)]                       [__or NA]
+  [Specific accommodations (e.g., pediatric, parent present, asleep)]                                                   [__or NA]
+  [Experimental personnel (number of planned personnel to interact with participants)]                                  [__or NA]
 
-[]{dir="ltr"}
 
-***[MRI system]{dir="ltr"}***
 
-  [Manufacturer]{dir="ltr"}                [\_\_]{dir="ltr"}
+***[MRI system]***
+
+  [Manufacturer]                [__]
   ---------------------------------------- -------------------
-  [Model name]{dir="ltr"}                  [\_\_]{dir="ltr"}
-  [Software version]{dir="ltr"}            [\_\_]{dir="ltr"}
-  [Field strength (in Tesla)]{dir="ltr"}   [\_\_]{dir="ltr"}
-  [Transmission coil]{dir="ltr"}           [\_\_]{dir="ltr"}
-  [Receiving head coil]{dir="ltr"}         [\_\_]{dir="ltr"}
+  [Model name]                  [__]
+  [Software version]            [__]
+  [Field strength (in Tesla)]   [__]
+  [Transmission coil]           [__]
+  [Receiving head coil]         [__]
 
-[]{dir="ltr"}
 
-[***MRI acquisition***]{dir="ltr"}
+
+[***MRI acquisition***]
 
 *[If this is a study using multiple different scanners, or if multiple
 different sequences of the same category are used (e.g. multiple
 functional MRI sequences), please fill out a separate table for each
-scanner and sequence.]{dir="ltr"}*
+scanner and sequence.]*
 
 +-----------------------+-----------------------+-----------------------+
-| **[For all            | [Pulse sequence       | [\_\_]{dir="ltr"}     |
+| **[For all            | [Pulse sequence       | [__]     |
 | acquisitions:]{dir="l | (gradient/spin echo   |                       |
-| tr"}**                | etc.)]{dir="ltr"}     |                       |
+| tr"}**                | etc.)]     |                       |
 +=======================+=======================+=======================+
-| []{dir="ltr"}         | [Readout (EPI,        | [\_\_]{dir="ltr"}     |
+|          | [Readout (EPI,        | [__]     |
 |                       | spiral, 3D, partial   |                       |
 |                       | Fourier,              |                       |
-|                       | etc.)]{dir="ltr"}     |                       |
+|                       | etc.)]     |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Echo time            | [\_\_]{dir="ltr"}     |
-|                       | (TE)]{dir="ltr"}      |                       |
+|          | [Echo time            | [__]     |
+|                       | (TE)]      |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Repetition time      | [\_\_]{dir="ltr"}     |
-|                       | (TR)]{dir="ltr"}      |                       |
+|          | [Repetition time      | [__]     |
+|                       | (TR)]      |                       |
 |                       |                       |                       |
 |                       | -   [For multi­shot   |                       |
 |                       |     > acquisitions,   |                       |
@@ -1765,19 +1643,19 @@ scanner and sequence.]{dir="ltr"}*
 |                       |     > volume.]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Flip angle           | [\_\_]{dir="ltr"}     |
-|                       | (FA)]{dir="ltr"}      |                       |
+|          | [Flip angle           | [__]     |
+|                       | (FA)]      |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Acquisition time     | [\_\_]{dir="ltr"}     |
+|          | [Acquisition time     | [__]     |
 |                       | (duration of          |                       |
 |                       | acquisition)]{dir="lt |                       |
 |                       | r"}                   |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Field of view        | [\_\_]{dir="ltr"}     |
-|                       | (FOV)]{dir="ltr"}     |                       |
+|          | [Field of view        | [__]     |
+|                       | (FOV)]     |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [FOV                  | [\_\_]{dir="ltr"}     |
-|                       | position?]{dir="ltr"} |                       |
+|          | [FOV                  | [__]     |
+|                       | position?] |                       |
 |                       |                       |                       |
 |                       | -   [Full or partial  |                       |
 |                       |     > brain           |                       |
@@ -1797,36 +1675,36 @@ scanner and sequence.]{dir="ltr"}*
 |                       |     > ALIGN)?]{dir="l |                       |
 |                       | tr"}                  |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Voxel size           | [\_\_]{dir="ltr"}     |
+|          | [Voxel size           | [__]     |
 |                       | (in-plane)]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Slice                | [\_\_]{dir="ltr"}     |
-|                       | thickness]{dir="ltr"} |                       |
+|          | [Slice                | [__]     |
+|                       | thickness] |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Slice                | [\_\_]{dir="ltr"}     |
-|                       | gap]{dir="ltr"}       |                       |
+|          | [Slice                | [__]     |
+|                       | gap]       |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Slice selection      | [\_\_]{dir="ltr"}     |
+|          | [Slice selection      | [__]     |
 |                       | direction (axial,     |                       |
 |                       | sagittal, coronal,    |                       |
-|                       | oblique)]{dir="ltr"}  |                       |
+|                       | oblique)]  |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Slice                | [\_\_]{dir="ltr"}     |
+|          | [Slice                | [__]     |
 |                       | angulation]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Slice acquisition    | [\_\_]{dir="ltr"}     |
+|          | [Slice acquisition    | [__]     |
 |                       | order (ascending,     |                       |
 |                       | descending,           |                       |
 |                       | interleaved)]{dir="lt |                       |
 |                       | r"}                   |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Parallel imaging     | [\_ or NA]{dir="ltr"} |
+|          | [Parallel imaging     | [_ or NA] |
 |                       | method (GRAPPA, PAT   |                       |
-|                       | ...)]{dir="ltr"}      |                       |
+|                       | ...)]      |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Scanner-side         | [\_ or NA]{dir="ltr"} |
+|          | [Scanner-side         | [_ or NA] |
 |                       | preprocessing (e.g.,  |                       |
 |                       | Including: Fat        |                       |
 |                       | saturation,           |                       |
@@ -1843,54 +1721,54 @@ scanner and sequence.]{dir="ltr"}*
 |                       | inhomogeneity         |                       |
 |                       | correction;           |                       |
 |                       | Distortion-correction |                       |
-|                       | .)]{dir="ltr"}        |                       |
+|                       | .)]        |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Phase encoding       | [\_\_]{dir="ltr"}     |
-|                       | direction]{dir="ltr"} |                       |
+|          | [Phase encoding       | [__]     |
+|                       | direction] |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[Functional MRI     | [Number of            | [\_\_]{dir="ltr"}     |
-| /]{dir="ltr"}**       | volumes]{dir="ltr"}   |                       |
+| **[Functional MRI     | [Number of            | [__]     |
+| /]**       | volumes]   |                       |
 |                       |                       |                       |
 | **[or \"dynamic (4D)  |                       |                       |
 | MRI e.g. functional,  |                       |                       |
 | perfusion             |                       |                       |
-| MRI\"]{dir="ltr"}**   |                       |                       |
+| MRI\"]**   |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Single or            | [\_\_]{dir="ltr"}     |
+|          | [Single or            | [__]     |
 |                       | multi-echo?]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [Simultaneous         | [\_ or NA]{dir="ltr"} |
+|          | [Simultaneous         | [_ or NA] |
 |                       | multislice            |                       |
 |                       | acquisition &         |                       |
 |                       | parameters (e.g.      |                       |
 |                       | multiband)]{dir="ltr" |                       |
 |                       | }                     |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [T1 stabilization     | [\_ or NA]{dir="ltr"} |
+|          | [T1 stabilization     | [_ or NA] |
 |                       | (discarded "dummy"    |                       |
 |                       | scans *by             |                       |
-|                       | scanner*)]{dir="ltr"} |                       |
+|                       | scanner*)] |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | > [Sparse sampling    | []{dir="ltr"}         |
+|          | > [Sparse sampling    |          |
 |                       | > delay (delay in TR) |                       |
 |                       | > if                  |                       |
-|                       | > used.]{dir="ltr"}   |                       |
+|                       | > used.]   |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[T1-weighted        | [Fat                  | [\_ or NA]{dir="ltr"} |
-| imaging]{dir="ltr"}** | suppression]{dir="ltr |                       |
+| **[T1-weighted        | [Fat                  | [_ or NA] |
+| imaging]** | suppression]{dir="ltr |                       |
 |                       | "}                    |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[Other anatomical   | []{dir="ltr"}         | [\_ or NA]{dir="ltr"} |
+| **[Other anatomical   |          | [_ or NA] |
 | imaging               |                       |                       |
-| (T2)]{dir="ltr"}**    |                       |                       |
+| (T2)]**    |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[Inversion recovery | [Inversion time       | [\_ or NA]{dir="ltr"} |
-| sequences]{dir="ltr"} | (TI)]{dir="ltr"}      |                       |
+| **[Inversion recovery | [Inversion time       | [_ or NA] |
+| sequences] | (TI)]      |                       |
 | **                    |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| > **[Additional       | [B0 field             | [\_ or NA]{dir="ltr"} |
-| > imaging]{dir="ltr"} | maps]{dir="ltr"}      |                       |
+| > **[Additional       | [B0 field             | [_ or NA] |
+| > imaging] | maps]      |                       |
 | **                    |                       |                       |
 | >                     | -   [echo difference  |                       |
 | > **[for              |     > between         |                       |
@@ -1900,11 +1778,11 @@ scanner and sequence.]{dir="ltr"}*
 | > **[correction]{dir= |                       |                       |
 | "ltr"}**              |                       |                       |
 |                       |                       |                       |
-| []{dir="ltr"}         |                       |                       |
+|          |                       |                       |
 +-----------------------+-----------------------+-----------------------+
-| []{dir="ltr"}         | [ap-pa acquisitions   | [\_ or NA]{dir="ltr"} |
+|          | [ap-pa acquisitions   | [_ or NA] |
 |                       | (reverse              |                       |
-|                       | phase)]{dir="ltr"}    |                       |
+|                       | phase)]    |                       |
 |                       |                       |                       |
 |                       | -   [state if         |                       |
 |                       |     > parameters      |                       |
@@ -1913,7 +1791,7 @@ scanner and sequence.]{dir="ltr"}*
 |                       |     > acquisition]{di |                       |
 |                       | r="ltr"}              |                       |
 +-----------------------+-----------------------+-----------------------+
-| [**Physiological      | [Description          | [\_ or NA]{dir="ltr"} |
+| [**Physiological      | [Description          | [_ or NA] |
 | measures**]{dir="ltr" | (acquisition method,  |                       |
 | }                     | hardware) and brief   |                       |
 |                       | purpose of any        |                       |
@@ -1932,11 +1810,11 @@ scanner and sequence.]{dir="ltr"}*
 |                       | samples, skin         |                       |
 |                       | conductance (SCR),    |                       |
 |                       | electromyography,     |                       |
-|                       | etc.).]{dir="ltr"}    |                       |
+|                       | etc.).]    |                       |
 |                       |                       |                       |
-|                       | []{dir="ltr"}         |                       |
+|                       |          |                       |
 +-----------------------+-----------------------+-----------------------+
-| **[Other imaging      | [Give a description   | []{dir="ltr"}         |
+| **[Other imaging      | [Give a description   |          |
 | modalities]{dir="ltr" | and brief purpose     |                       |
 | }**                   | statement of any      |                       |
 |                       | other imaging         |                       |
@@ -1945,150 +1823,150 @@ scanner and sequence.]{dir="ltr"}*
 |                       | study (e.g., EEG,     |                       |
 |                       | Neuromodulation (TMS, |                       |
 |                       | tDCS,                 |                       |
-|                       | ...)).]{dir="ltr"}    |                       |
+|                       | ...)).]    |                       |
 +-----------------------+-----------------------+-----------------------+
 
-[]{dir="ltr"}
 
-[]{dir="ltr"}
 
-[Appendix 3: Additional fMRI analyses]{dir="ltr"}
+
+
+[Appendix 3: Additional fMRI analyses]
 -------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | **[Functional                     |                                   |
-| connectivity]{dir="ltr"}**        |                                   |
+| connectivity]**        |                                   |
 +===================================+===================================+
 | *[Confound adjustment & filtering |                                   |
-| Report:]{dir="ltr"}*              |                                   |
+| Report:]*              |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Method for detecting movement    |
+| [__or NA]            | [Method for detecting movement    |
 |                                   | artifacts, movement-related       |
 |                                   | variation, and remediation        |
 |                                   | (e.g. 'scrubbing', 'despiking',   |
-|                                   | etc)]{dir="ltr"}                  |
+|                                   | etc)]                  |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Use of global signal regression, |
+| [__or NA]            | [Use of global signal regression, |
 |                                   | exact type of global signal used  |
 |                                   | and how it was                    |
-|                                   | computed]{dir="ltr"}              |
+|                                   | computed]              |
 +-----------------------------------+-----------------------------------+
 | [\                                | [Whether a high or lowpass        |
-| \_\_or NA]{dir="ltr"}             | temporal filtering is applied to  |
+| __or NA]             | temporal filtering is applied to  |
 |                                   | data, and at which point in the   |
 |                                   | analysis pipeline. Note, any      |
 |                                   | temporal regression model using   |
 |                                   | filtered data should have its     |
 |                                   | regressors likewise               |
-|                                   | filtered]{dir="ltr"}              |
+|                                   | filtered]              |
 +-----------------------------------+-----------------------------------+
 | [*Multivariate method:            |                                   |
 | Independent Component Analysis    |                                   |
-| Report:*]{dir="ltr"}              |                                   |
+| Report:*]              |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Algorithm to estimate            |
-|                                   | components]{dir="ltr"}            |
+| [__or NA]            | [Algorithm to estimate            |
+|                                   | components]            |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Number of components (if fixed), |
+| [__or NA]            | [Number of components (if fixed), |
 |                                   | or algorithm for estimating       |
-|                                   | number of components]{dir="ltr"}  |
+|                                   | number of components]  |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [If used, method to synthesize    |
-|                                   | multiple runs]{dir="ltr"}         |
+| [__or NA]            | [If used, method to synthesize    |
+|                                   | multiple runs]         |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Sorting method of IC's, if       |
-|                                   | any]{dir="ltr"}                   |
+| [__or NA]            | [Sorting method of IC's, if       |
+|                                   | any]                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Detailed description of how      |
+| [__or NA]            | [Detailed description of how      |
 |                                   | components were chosen for        |
-|                                   | further analysis]{dir="ltr"}      |
+|                                   | further analysis]      |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Dependent variable               |
-|                                   | definition]{dir="ltr"}            |
+| [__or NA]            | [Dependent variable               |
+|                                   | definition]            |
 +-----------------------------------+-----------------------------------+
 | [*For seed-based analyses         |                                   |
-| report:*]{dir="ltr"}              |                                   |
+| report:*]              |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Definition of the seed           |
-|                                   | region(s)]{dir="ltr"}             |
+| [__or NA]            | [Definition of the seed           |
+|                                   | region(s)]             |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Rationale for choosing these     |
-|                                   | regions]{dir="ltr"}               |
+| [__or NA]            | [Rationale for choosing these     |
+|                                   | regions]               |
 +-----------------------------------+-----------------------------------+
 | [*For region-based analyses       |                                   |
-| report:*]{dir="ltr"}              |                                   |
+| report:*]              |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Number of ROIs]{dir="ltr"}       |
+| [__or NA]            | [Number of ROIs]       |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [How the ROI's are defined        |
+| [__or NA]            | [How the ROI's are defined        |
 |                                   | (e.g. citable anatomical atlas;   |
 |                                   | auxiliary fMRI experiments); note |
-|                                   | if ROIs overlap]{dir="ltr"}       |
+|                                   | if ROIs overlap]       |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Assignment of signals to regions |
+| [__or NA]            | [Assignment of signals to regions |
 |                                   | (i.e. how a time series is        |
 |                                   | obtained from each region,        |
 |                                   | e.g. averaging or first singular  |
-|                                   | vector)]{dir="ltr"}               |
+|                                   | vector)]               |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Note if considering only         |
+| [__or NA]            | [Note if considering only         |
 |                                   | bilateral (L+R) merged            |
-|                                   | regions]{dir="ltr"}               |
+|                                   | regions]               |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Note if considering only         |
+| [__or NA]            | [Note if considering only         |
 |                                   | interhemispheric homotopic        |
-|                                   | connectivity]{dir="ltr"}          |
+|                                   | connectivity]          |
 +-----------------------------------+-----------------------------------+
 | [*Functional connectivity         |                                   |
 | measure/model                     |                                   |
-| Report:*]{dir="ltr"}              |                                   |
+| Report:*]              |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Measure of dependence used,      |
+| [__or NA]            | [Measure of dependence used,      |
 |                                   | e.g. Pearson's (full)             |
 |                                   | correlation, partial correlation, |
 |                                   | mutual information, etc; also     |
-|                                   | specify:]{dir="ltr"}              |
+|                                   | specify:]              |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Use of Fisher's Z-transform      |
+| [__or NA]            | [Use of Fisher's Z-transform      |
 |                                   | (Yes/No) and, if standardised,    |
 |                                   | effective N is used to compute    |
 |                                   | standard error (to account for    |
 |                                   | any filtering operations on the   |
-|                                   | data)]{dir="ltr"}                 |
+|                                   | data)]                 |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Estimator used for partial       |
-|                                   | correlation]{dir="ltr"}           |
+| [__or NA]            | [Estimator used for partial       |
+|                                   | correlation]           |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Estimator used for mutual        |
-|                                   | information]{dir="ltr"}           |
+| [__or NA]            | [Estimator used for mutual        |
+|                                   | information]           |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Regression model used to remove  |
+| [__or NA]            | [Regression model used to remove  |
 |                                   | confounding effects (Pearson or   |
-|                                   | partial correlation)]{dir="ltr"}  |
+|                                   | partial correlation)]  |
 +-----------------------------------+-----------------------------------+
 | [*Effectivity connectivity        |                                   |
-| Report:*]{dir="ltr"}              |                                   |
+| Report:*]              |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Model]{dir="ltr"}                |
+| [__or NA]            | [Model]                |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Algorithm used to fit            |
-|                                   | model]{dir="ltr"}                 |
+| [__or NA]            | [Algorithm used to fit            |
+|                                   | model]                 |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [If per subject model, method     |
+| [__or NA]            | [If per subject model, method     |
 |                                   | used to generalize inferences to  |
 |                                   | population. Itemize models        |
 |                                   | considered, and method used for   |
-|                                   | model comparison]{dir="ltr"}      |
+|                                   | model comparison]      |
 +-----------------------------------+-----------------------------------+
-| [*Graph analysis*]{dir="ltr"}     |                                   |
+| [*Graph analysis*]     |                                   |
 +-----------------------------------+-----------------------------------+
 | [\                                | [Report the 'dependent variable'  |
 | \                                 | and 'functional connectivity      |
-| \_\_or NA]{dir="ltr"}             | measure' used (see above).        |
-|                                   | Specify either:]{dir="ltr"}       |
+| __or NA]             | measure' used (see above).        |
+|                                   | Specify either:]       |
 |                                   |                                   |
 |                                   | -   [Weighted graph analysis      |
-|                                   |     > or]{dir="ltr"}              |
+|                                   |     > or]              |
 |                                   |                                   |
 |                                   | -   [Binarized graph analysis is  |
 |                                   |     > used, clarifying the method |
@@ -2100,32 +1978,32 @@ scanner and sequence.]{dir="ltr"}*
 |                                   |     > sensitivity of your         |
 |                                   |     > findings to the particular  |
 |                                   |     > choice of threshold         |
-|                                   |     > used]{dir="ltr"}            |
+|                                   |     > used]            |
 +-----------------------------------+-----------------------------------+
 | [\                                | [Itemise the graph summaries used |
-| \_\_or NA]{dir="ltr"}             | (e.g. clustering coefficient,     |
+| __or NA]             | (e.g. clustering coefficient,     |
 |                                   | efficiency, etc), whether these   |
 |                                   | are global or per¬node/per¬edge   |
 |                                   | summaries. In particular with     |
 |                                   | fMRI or EEG, clarify if measures  |
 |                                   | applied to individual subject     |
 |                                   | networks or group                 |
-|                                   | networks]{dir="ltr"}              |
+|                                   | networks]              |
 +-----------------------------------+-----------------------------------+
 | **[Decoding                       |                                   |
-| analysis]{dir="ltr"}**            |                                   |
+| analysis]**            |                                   |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Algorithm choice(s)]{dir="ltr"}  |
+| [__or NA]            | [Algorithm choice(s)]  |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Hyperparameter                   |
-|                                   | optimization]{dir="ltr"}          |
+| [__or NA]            | [Hyperparameter                   |
+|                                   | optimization]          |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Cross-validation regimen         |
+| [__or NA]            | [Cross-validation regimen         |
 |                                   | \[including whether               |
 |                                   | stratification is                 |
-|                                   | applied\]]{dir="ltr"}             |
+|                                   | applied\]]             |
 +-----------------------------------+-----------------------------------+
-| [\_\_or NA]{dir="ltr"}            | [Hold-out samples]{dir="ltr"}     |
+| [__or NA]            | [Hold-out samples]     |
 +-----------------------------------+-----------------------------------+
 
-[]{dir="ltr"}
+
