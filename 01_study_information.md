@@ -28,28 +28,14 @@ of other relevant variables mentioned here. How to define your ROIs or
 operationalize these relevant variables should be detailed in the section
 **Variables** and **Analysis Plan**.
 
----
-
-\_\_ Is the hypothesis directional or non-directional?
-
----
-
-\_\_ or NA If directional, state the directional relationship between your
-(manipulated or measured) variables.
-
-\_\_ or NA For interaction effects, describe the expected shape of the
-interactions.
-
-If you are manipulating a variable, formulate predictions for successful
-manipulation checks: What variables will you use to check whether your
-manipulation worked? If not, explain why no manipulation check is included. \_\_
-or NA
-
-\_\_or NA A figure or table with expected results, e.g., to describe complex
-interactions.
-
-If multiple alternative predictions can be made for the same IV-DV combination,
-describe what outcome would be predicted by which theory. \_\_or NA
+|            |                                                                                                                                                                                                                             |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \_\_       | Is the hypothesis directional or non-directional?                                                                                                                                                                           |
+| \_\_ or NA | If directional, state the directional relationship between your (manipulated or measured) variables.                                                                                                                        |
+| \_\_ or NA | For interaction effects, describe the expected shape of the interactions.                                                                                                                                                   |
+| \_\_ or NA | If you are manipulating a variable, formulate predictions for successful manipulation checks: What variables will you use to check whether your manipulation worked? If not, explain why no manipulation check is included. |
+| \_\_or NA  | A figure or table with expected results, e.g., to describe complex interactions.                                                                                                                                            |
+| \_\_or NA  | If multiple alternative predictions can be made for the same IV-DV combination, describe what outcome would be predicted by which theory.                                                                                   |
 
 ---
 
