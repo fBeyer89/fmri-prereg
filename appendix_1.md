@@ -1,0 +1,25 @@
+## [Appendix 1: Examples of fMRI study pre-registrations]
+
+- [Pre data collection preregistration following a structure similar
+
+  > to the present template with extensive detail:
+  > [[https://osf.io/2zhve]{.underline}](https://osf.io/2zhve)]
+
+- [Pre data collection preregistration with extensive detail in
+
+  > flow-text: [[https://osf.io/7q68p/]{.underline}](https://osf.io/7q68p/)]
+
+- [studies with standard preprocessing approaches (SPM, fMRIprep):
+
+  > [[https://osf.io/5mx3w]{.underline}](https://osf.io/5mx3w); [[https://osf.io/hndbq]{.underline}](https://osf.io/hndbq) \[previously collected data\]]
+
+- [concise preregistration of functional connectivity analyses of
+
+  > existing data: [[https://osf.io/utqq2]{.underline}](https://osf.io/utqq2)]
+
+- [methods analysis on publicly available datasets:
+
+  > [[https://osf.io/2jxdk/]{.underline}](https://osf.io/2jxdk/)]
+
+- [Example of a multi-study pre-registration:
+  > [[https://osf.io/wzd8a]{.underline}](https://osf.io/wzd8a)]
