@@ -1,4 +1,4 @@
-## [Appendix 1: Examples of fMRI study pre-registrations]
+# [Appendix 1: Examples of fMRI study pre-registrations]
 
 - Pre data collection preregistration following a structure similar to the
   present template with extensive detail:

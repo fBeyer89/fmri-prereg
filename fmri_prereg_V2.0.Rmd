@@ -64,5 +64,6 @@ as they will appear in your future paper.*
 ```{r child='appendix_2.Rmd'}
 ```
 
-
+```{r child='appendix_3.Rmd'}
+```
 
