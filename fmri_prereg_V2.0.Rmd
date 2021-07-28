@@ -1,0 +1,67 @@
+---
+title: "fMRI Prereg V2.0"
+date: "2020/07/28"
+toc: true
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+<!-- 
+
+**[Discussion points]**
+
+- [detailed vs. concise description of elements, or support both?]
+- [template might be too overwhelming if detailed -\> rather break down by using 
+    mandatory/optional, maybe have "defaults" of programs in supplements/methods part to make sure they are reported]
+- [lots of details about things that you cannot change after you have conducted your experiment (fmri sequence), 
+    most people preregister after they have acquired their task]
+- [move acquisition parameters and other parts which are important for manuscript but not for preregistration to appendix]
+- [mark recommended and essential labels (e.g., relating to the choice of going with a detailed vs. concise description)]
+- [other modalities (to be added after publishing the fMRI specific template)]
+- [incorporate fmriprep's defaults]
+- [align structure with structure of a manuscript: decision: keep current order (OSF template) and move into a more concise version]
+- [use tables as list of check boxes when writing methods section]
+- [power analysis: unknown effect sizes and practical limitations in fMRI studies rather than a-priori power analysis which are rarely done. 
+   Exploratory vs. confirmatory analyses,] 
+   
+-->
+
+
+
+```{r child='01_study_information.Rmd'}
+```
+
+```{r child='02_design_plan.Rmd'}
+```
+
+```{r child='03_sampling_plan.Rmd'}
+```
+
+```{r child='04_variables.Rmd'}
+```
+
+```{r child='05_analysis_plan.Rmd'}
+```
+
+```{r child='appendix_1.Rmd'}
+```
+
+```{r child='appendix_2.Rmd'}
+```
+
+
+# [Usage Notes to the template]
+
+_The goal of this template is to provide sufficient information in
+preregistration of fMRI studies to increase reproducibility._
+
+_A \* indicates you should fill out this section, all other sections are
+optional._
+
+*You can use the tables to fill in your design specifications, or use them as
+checklists of information you include in the text for in attached files (e.g.,
+json file of scan parameters). If a certain table/section does not apply, just
+state "NA." Tip: Using it as a checklist will allow you to write these sections
+as they will appear in your future paper.*
