@@ -10,7 +10,9 @@ output:
 
 <!-- 
 
-**[Discussion points]**
+**[Development of the template]**
+The template was based on the original version by Jessica Flannery, and extended in several hackathons.
+We mainly aimed to better fit the template to the needs of fMRI researchers who are faced with a multitude of pre-processing and analysis options. At the same time, we tried to keep it concise and manageable. Below, you can find some of the things we discussed, and solutions we found.
 
 - [detailed vs. concise description of elements, or support both?]
 - [template might be too overwhelming if detailed -\> rather break down by using 

@@ -1,5 +1,13 @@
 # fmri-prereg
-A second option to work with fMRI prereg
 
+An updated template for the pre-registration of your fMRI study
 
-The R markdown provides a bit more flexibility in how you use the preregistration template. It be used to work within it and more seemlessly include example code. It allows for easy time stamped differences to be tracked if you use git to upload edits of your preregistration. You can also knit the document to a word doc to more easily edit the document (without the formatting issues of the original word document). This provides the option to use an Rmarkdown file to include or exclude the relevant parts of the study design for your preregistration and then knit to an html, pdf or word doc to upload as your prereg doc. 
+*** 
+Contributors: Jessica Flannery, Remi Gau, Frauke Beyer, Ahmed Khalil, Sandra Martin, Ilona Lipp,  Lina Schaare,
+Lieneke Janssen, Lara Puhlmann, Hannah Heinrichs, Abdallah Mohamed, Peer Herholz, Maurizio Sicorello, Eleni Panagoulas, Helena Hartmann, Gustav Nilsonne
+***
+
+The R markdown version of the [updated fMRI pre-registration template](https://docs.google.com/document/d/1EXS6UeCvOL_nzo5P_iCIPug_P-ZmzkdNfvbYPYJnEkg/edit#) is more user-friendly and flexible as you can easily
+- move between R, pdf, html, and word format
+- include code examples
+- track time-stamped differences if you use git to upload edits of your pre-registration

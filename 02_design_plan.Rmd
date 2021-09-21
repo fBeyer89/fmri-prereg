@@ -17,8 +17,7 @@ them._
 
 Describe your **study design**. Is it a between-subjects (unpaired),
 within-subjects (paired), or mixed design? If applicable, specify
-manipulation(s), groups tested, and repeated measurements. For typical types of
-study designs, see Appendix 2.
+manipulation(s), groups tested, and repeated measurements. 
 
 **Experiment / Intervention study**: involves a manipulation of exposure on the
 subject level

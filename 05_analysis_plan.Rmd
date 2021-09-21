@@ -41,7 +41,7 @@ the neural level and corresponding confirmatory hypothesis. If applicable,
 describe covariate measures.
 
 For necessary details regarding functional connectivity and decoding analysis,
-please see **Appendix 4**.
+please see **Appendix 3**.
 
 #### Individual (first) level modeling
 
